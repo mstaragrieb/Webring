@@ -15,6 +15,7 @@
 
   <!-- JAVASCRIPT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script charset="utf-8" src="js/glide.js"></script>
   <script charset="utf-8" src="js/app.js"></script>
 
   <!-- FONT
@@ -29,6 +30,11 @@
   <link rel="stylesheet" href="Skeleton_Css/normalize.css">
   <link rel="stylesheet" href="Skeleton_Css/skeleton.css">
   <link rel="stylesheet" href="Skeleton_Css/app.css">
+  <!-- Required Core Stylesheet -->
+  <link rel="stylesheet" href="Glide_Css/glide.core.min.css">
+
+  <!-- Optional Theme Stylesheet -->
+  <link rel="stylesheet" href="Glide_Css/glide.theme.min.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -64,7 +70,29 @@
       </div>
     </div>
   </div>
+  <div class="content">
+     <div class="glide">
+              <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                      <li class="glide__slide">0</li>
+                      <li class="glide__slide">1</li>
+                      <li class="glide__slide">2</li>
+                  </ul>
+              </div>
+              <div class="glide">
+                  <div class="glide__arrows" data-glide-el="controls">
+                      <button class="glide__arrow glide__arrow--prev" data-glide-dir="<">prev</button>
+                      <button class="glide__arrow glide__arrow--next" data-glide-dir=">">next</button>
+                  </div>
 
+                  <div class="glide__bullets" data-glide-el="controls[nav]">
+                      <button class="glide__bullet" data-glide-dir="=0"></button>
+                      <button class="glide__bullet" data-glide-dir="=1"></button>
+                      <button class="glide__bullet" data-glide-dir="=2"></button>
+                  </div>
+              </div>
+          </div>
+  </div>
   <div class="section values">
     <div class="container">
       <div class="row">

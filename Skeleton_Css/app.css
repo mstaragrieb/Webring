@@ -282,3 +282,15 @@ h6 {
         max-height: 570px;
     } */
 }
+
+
+
+
+.glide {
+    {
+        height: 75vh;
+        background-color: #000;
+        color: #fff;
+        border: 1px solid lime;
+    }
+}
