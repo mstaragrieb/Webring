@@ -194,6 +194,37 @@ h6 {
     background-image: url("../images/logo_square.png");
 }
 
+.glide {
+
+}
+
+.glide__slides{
+    height:77rem;
+}
+
+.glide__slide{
+
+}
+
+.glide-slide-top{
+    height: 40rem;
+    width:  27rem;
+    margin-bottom:1rem;
+}
+
+.glide-slide-bottom{
+
+}
+
+.glide__arrows{
+    position: relative;
+    margin-top: -50.5rem;
+    margin-bottom: 50rem;
+}
+
+.glide__arrow--next{
+    float:right
+}
 @media all and (min-width: 550px) {
     .logo{
     order: 1;
@@ -281,16 +312,4 @@ h6 {
         top: -14rem;
         max-height: 570px;
     } */
-}
-
-
-
-
-.glide {
-    {
-        height: 75vh;
-        background-color: #000;
-        color: #fff;
-        border: 1px solid lime;
-    }
 }
