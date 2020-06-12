@@ -13,6 +13,7 @@ $morning-blue: #839ea1ff;
   --separator: #839ea1ff;
   --light-text: #FFF;
   --dark-text: #000;
+  --light-text-colored:#3DC4D3;
   --roboto-font-family: "Roboto Condensed", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --source-sans-font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --glide-button-background: #208996;
@@ -220,12 +221,44 @@ h6 {
 
 .glide__arrows{
     position: relative;
-    margin-top: -61.5rem;
-    margin-bottom: 60rem;
+    margin-top: -66rem;
+    margin-bottom: 66rem;
+}
+
+.glide__arrow{
+    /* display: inline-block; */
+height: 13.2rem;
+padding: 0rem;
+width: 3.2rem;
+/* padding: 0 30px; */
+/* color: #555; */
+text-align: center;
+/* font-size: 11px; */
+/* font-weight: 600; */
+line-height: 0rem;
+/* letter-spacing: .1rem; */
+/* text-transform: uppercase; */
+/* text-decoration: none; */
+/* white-space: nowrap; */
+background-color: #208996;
+border-radius: 4px;
+border: 0px solid #bbb;
+box-sizing: border-box;
+opacity: 0.68;
 }
 
 .glide__arrow--next{
     float:right
+}
+
+.glide-slide-bottom-tags{
+    height: 48px;
+    width: 217px;
+    color: var(--light-text-colored);
+    font-family: var(--roboto-font-family);
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 24px;
 }
 @media all and (min-width: 550px) {
     .logo{
