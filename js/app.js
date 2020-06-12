@@ -1,3 +1,142 @@
+var comicsList = {
+  "comicsData": [
+    {
+      "comicName": "Midnight Furies",
+      "authorNames": "Jess Herron",
+      "comicDescription": "Zoe is an ex-basketball-ace desperate for any way to play the game who was forced by the death of her parents to drop out of school and support her brothers. Luckily, her mysterious friend Chase can get her into the most off-the-wall tournament no one's ever heard of- one where you play for time added onto your life! But Zoe's gotta be careful. Chase is playing her own game... and it might cost them more than just points. ~~~~~ DRAMA/ACTION/SLOWBURN ROMANCE F|M F|F, 14+, updates 3x a month",
+      "comicGenres": [
+        "Action",
+        "Drama",
+        "LGBTQ+"
+        ],
+      "comicBadges": [{
+        "badgeLink": "foo",
+        "badgeURL": "foo",
+        "badgeImage": "foo"
+      },
+      {
+        "badgeLink": "foo",
+        "badgeURL": "foo",
+        "badgeImage": "foo"
+      },
+      {
+        "badgeLink": "foo",
+        "badgeURL": "foo",
+        "badgeImage": "foo"
+      },
+      {
+        "badgeLink": "foo",
+        "badgeURL": "foo",
+        "badgeImage": "foo"
+      },
+      {
+        "badgeLink": "foo",
+        "badgeURL": "foo",
+        "badgeImage": "foo"
+      }]
+    },
+    {
+      "comicName": "Long Exposure",
+      "authorNames": true,
+      "comicDescription": "gold",
+      "comicGenres": null,
+      "comicBadges": {
+        "badgeLink": "foo",
+        "badgeURL": "foo",
+        "badgeImage": "foo"
+      }
+    },
+    {
+      "comicName": "",
+      "authorNames": true,
+      "comicDescription": "gold",
+      "comicGenres": null,
+      "comicBadges": {
+        "badgeLink": "foo",
+        "badgeURL": "foo",
+        "badgeImage": "foo"
+      }
+    },
+    {
+      "comicName": "",
+      "authorNames": true,
+      "comicDescription": "gold",
+      "comicGenres": null,
+      "comicBadges": {
+        "badgeLink": "foo",
+        "badgeURL": "foo",
+        "badgeImage": "foo"
+      }
+    },
+    {
+      "comicName": "",
+      "authorNames": true,
+      "comicDescription": "gold",
+      "comicGenres": null,
+      "comicBadges": {
+        "badgeLink": "foo",
+        "badgeURL": "foo",
+        "badgeImage": "foo"
+      }
+    },
+    {
+      "comicName": "",
+      "authorNames": true,
+      "comicDescription": "gold",
+      "comicGenres": null,
+      "comicBadges": {
+        "badgeLink": "foo",
+        "badgeURL": "foo",
+        "badgeImage": "foo"
+      }
+    },
+    {
+      "comicName": "",
+      "authorNames": true,
+      "comicDescription": "gold",
+      "comicGenres": null,
+      "comicBadges": {
+        "badgeLink": "foo",
+        "badgeURL": "foo",
+        "badgeImage": "foo"
+      }
+    },
+    {
+      "comicName": "",
+      "authorNames": true,
+      "comicDescription": "gold",
+      "comicGenres": null,
+      "comicBadges": {
+        "badgeLink": "foo",
+        "badgeURL": "foo",
+        "badgeImage": "foo"
+      }
+    },
+    {
+      "comicName": "",
+      "authorNames": true,
+      "comicDescription": "gold",
+      "comicGenres": null,
+      "comicBadges": {
+        "badgeLink": "foo",
+        "badgeURL": "foo",
+        "badgeImage": "foo"
+      }
+    },
+    {
+      "comicName": "",
+      "authorNames": true,
+      "comicDescription": "gold",
+      "comicGenres": null,
+      "comicBadges": {
+        "badgeLink": "foo",
+        "badgeURL": "foo",
+        "badgeImage": "foo"
+      }
+    }
+  ]
+}
+
 function ready(callbackFunc) {
   if (document.readyState !== 'loading') {
     // Document is already ready, call the callback directly

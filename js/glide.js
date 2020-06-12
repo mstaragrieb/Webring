@@ -1511,10 +1511,10 @@
        * @return {Object}
        */
       set: function set(r) {
-
         if (isString(r)) {
           r = document.querySelector(r);
         }
+
         if (exist(r)) {
           Html._r = r;
         } else {
