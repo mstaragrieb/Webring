@@ -80,11 +80,14 @@
                             <img src="images/logo_full.png" height="100%" width="240">
                         </div>
                         <div class="glide-slide-bottom">
-                            <div>
+                            <div class="glide-slide-bottom-icon-pack">
                                 <img src="images/logo_square.png"> <img src="images/logo_square.png"> <img src="images/logo_square.png">
                             </div>
-                            <div>
+                            <div class="glide-slide-bottom-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci tation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate…
+                            </div>
+                            <div class="glide-slide-bottom-tags">
+                                Drama, LGBT+, Fantasy, Funny, Mystery
                             </div>
                         </div>
                     </li>
@@ -93,11 +96,14 @@
                             <img src="images/logo_full.png" height="100%" width="240">
                         </div>
                         <div class="glide-slide-bottom">
-                            <div>
+                            <div class="glide-slide-bottom-icon-pack">
                                 <img src="images/logo_square.png"> <img src="images/logo_square.png"> <img src="images/logo_square.png">
                             </div>
-                            <div>
+                            <div class="glide-slide-bottom-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci tation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate…
+                            </div>
+                            <div class="glide-slide-bottom-tags">
+                                Drama, LGBT+, Fantasy, Funny, Mystery
                             </div>
                         </div>
                     </li>
@@ -106,19 +112,22 @@
                             <img src="images/logo_full.png" height="100%" width="240">
                         </div>
                         <div class="glide-slide-bottom">
-                            <div>
+                            <div class="glide-slide-bottom-icon-pack">
                                 <img src="images/logo_square.png"> <img src="images/logo_square.png"> <img src="images/logo_square.png">
                             </div>
-                            <div>
+                            <div class="glide-slide-bottom-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci tation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate…
+                            </div>
+                            <div class="glide-slide-bottom-tags">
+                                Drama, LGBT+, Fantasy, Funny, Mystery
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--prev" data-glide-dir="<">prev</button>
-                <button class="glide__arrow glide__arrow--next" data-glide-dir=">">next</button>
+                <button class="glide__arrow glide__arrow--prev" data-glide-dir="<"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg></button>
+                <button class="glide__arrow glide__arrow--next" data-glide-dir=">"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg></button>
             </div>
         </div>
     </div>
@@ -126,19 +135,19 @@
     <div class="container">
       <div class="row">
         <div class="one-third column value">
-          <h2 class="value-multiplier">67%</h2>
-          <h5 class="value-heading">Purchase Increase</h5>
-          <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
+          <h2 class="value-multiplier"></h2>
+          <h5 class="value-heading"></h5>
+          <p class="value-description"></p>
         </div>
         <div class="one-third column value">
-          <h2 class="value-multiplier">90%</h2>
-          <h5 class="value-heading">Multi-device Users</h5>
-          <p class="value-description">Most of the world accesses the internet on multiple devices.</p>
+          <h2 class="value-multiplier"></h2>
+          <h5 class="value-heading"></h5>
+          <p class="value-description"></p>
         </div>
         <div class="one-third column value">
-          <h2 class="value-multiplier">66%</h2>
-          <h5 class="value-heading">Sad Users</h5>
-          <p class="value-description">Percentage of users that are frustrated with page load times.</p>
+          <h2 class="value-multiplier"></h2>
+          <h5 class="value-heading"></h5>
+          <p class="value-description"></p>
         </div>
       </div>
     </div>
@@ -146,16 +155,16 @@
 
   <div class="section get-help">
     <div class="container">
-      <h3 class="section-heading">Need help getting started?</h3>
-      <p class="section-description">Skeleton is an amazingly easy place to start with responsive development. If you want to learn more, just visit the documentation!</p>
-      <a class="button button-primary" href="http://getskeleton.com">View Skeleton Docs</a>
+      <h3 class="section-heading"></h3>
+      <p class="section-description"></p>
+      <a class="button button-primary" href="http://getskeleton.com"></a>
     </div>
   </div>
 
   <div class="section categories">
     <div class="container">
-      <h3 class="section-heading">Responsive Images</h3>
-      <p class="section-description">Skeleton images sit easily in grid with .u-max-full-width class. I suggest exploring solution to serving different images based on device size.</p>
+      <h3 class="section-heading">s</h3>
+      <p class="section-description"></p>
       <div class="row">
         <div class="one-half column category">
           <img class="u-max-full-width" src="images/logo_full.png">
