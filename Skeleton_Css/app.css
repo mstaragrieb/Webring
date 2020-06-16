@@ -19,6 +19,11 @@ $morning-blue: #839ea1ff;
   --glide-button-background: #208996;
   --glide-button-background-alpha: 0.68;
   --lh: 1.6rem;
+/* Breakpoints */
+  --phone-breakpoint: 55rem;
+  --tablet-desktop-breakpoint 80rem;
+  --full-hd-breakpoint: 120rem;
+
 }
 
 /* Body Overrides
@@ -77,7 +82,7 @@ h6 {
     /* font-family: sans-serif;
     font-size: 1.5em; */
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 550px) {
     .drawer-toggle:not(.persistent) {
         display: none;
     }
@@ -143,7 +148,7 @@ h6 {
 [type=checkbox].drawer:checked + * {
     right: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 550px) {
     [type=checkbox].drawer:not(.persistent) + * {
         position: static;
         height: 100%;
@@ -206,12 +211,13 @@ h6 {
 }
 
 .glide__slide{
+    margin-left: 0;
     border-left: 2px solid #979797;
 }
 
 .glide-slide-top{
     height: 40rem;
-    width:  27rem;
+    /*  */
     margin-bottom:1rem;
     overflow: hidden;
 }
@@ -251,20 +257,29 @@ opacity: 0.68;
 .glide__arrow--next{
     float:right
 }
+.glide-slide-bottom-icons{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.6rem;
+}
 
 .glide-slide-bottom-tags{
     height: 4.8rem;
-    width: 21.7rem;
     color: var(--light-text-colored);
     font-family: var(--roboto-font-family);
     font-size: 1.8rem;
     letter-spacing: 0;
     line-height: 2.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.6rem;
 }
 
 .glide-slide-bottom-description{
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 1.6rem;
+    height:20rem;
 }
 
 /* Weird Webkit thing that works in FF and Edge */

@@ -252,6 +252,7 @@ ready(function(){
 
     var slideNodeTop = document.createElement('div');
     slideNodeTop.classList.add('glide-slide-top');
+    //slideNodeTop.classList.add('u-max-full-width');
     slideNodeTop.innerHTML='<img src="comic_images/' + index +'/slide.jpg">'  //height="100%" width="240"
     slideNode.appendChild(slideNodeTop);
 
@@ -260,11 +261,12 @@ ready(function(){
     slideNodeBottom.classList.add('glide-slide-bottom');
 
         var slideNodeBottomIcons = document.createElement('div');
-        slideNodeBottomIcons.classList.add('glide-slide-bottom-icon-pack');
+        slideNodeBottomIcons.classList.add('glide-slide-bottom-icons');
         comicsList.comicsData[index].comicBadges.forEach(function(el, index, array){
             //var badgeString = document.createTextNode('<img src="images/logo_square.png">');
             var slideNodeBottomIcon = document.createElement('img');
             slideNodeBottomIcon.setAttribute('src', 'images/brand_icons/icon_'+el.comicServer+'.png');
+            slideNodeBottomIcon.classList.add('glide-slide-bottom-icon');
             slideNodeBottomIcons.appendChild(slideNodeBottomIcon);
         });
         slideNodeBottom.appendChild(slideNodeBottomIcons);
@@ -323,19 +325,30 @@ ready(function() {
     autoplay: 0,
     animationDuration: 600,
     animationTimingFunc: 'linear',
-    perView: 3,
-    peek: {
-        before: 0,
-        after: 80
-    },
+    perView: 6,
+    gap:0,
     focusAt: 0,
     breakpoints: {
-        1024: {
-            perView: 2
+        1200: {
+            perView: 4
+        },
+        800: {
+            perView: 3
         },
         600: {
-            perView: 1
+            perView: 2,
+            peek: {
+                before: 0,
+                after: 80
+            }
+        },
+        450: {
+            perView: 1,
+            peek: {
+                before: 0,
+                after: 80
+            }
+        }
     }
-  }
   }).mount();
 });
