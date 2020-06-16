@@ -281,11 +281,13 @@ ready(function(){
         var slideNodeBottomTags = document.createElement('div');
         slideNodeBottomTags.classList.add('glide-slide-bottom-tags');
         comicsList.comicsData[index].comicTags.forEach(function(el, index, array){
-            console.log(el);
             //var badgeString = document.createTextNode('<img src="images/logo_square.png">');
             var slideNodeBottomTag = document.createTextNode(el);
             slideNodeBottomTags.appendChild(slideNodeBottomTag);
-            console.log()
+            if (index+1 < array.length){
+                var slideNodeBottomTagComma = document.createTextNode(', ');
+                slideNodeBottomTags.appendChild(slideNodeBottomTagComma);
+            }
         });
         slideNodeBottom.appendChild(slideNodeBottomTags);
 
