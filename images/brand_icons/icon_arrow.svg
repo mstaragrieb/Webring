@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="24px" viewBox="0 0 16 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15.1711143,13.2670807 L5.03446835,23.4037267 C4.33384723,24.1043478 3.20092798,24.1043478 2.50776028,23.4037267 L0.823288228,21.7192547 C0.12266711,21.0186335 0.12266711,19.8857143 0.823288228,19.1925466 L8.0083814,12.0074534 L0.823288228,4.82236025 C0.12266711,4.12173913 0.12266711,2.98881988 0.823288228,2.29565217 L2.50030686,0.596273292 C3.20092798,-0.104347826 4.33384723,-0.104347826 5.02701494,0.596273292 L15.1636609,10.7329193 C15.8717354,11.4335404 15.8717354,12.5664596 15.1711143,13.2670807 L15.1711143,13.2670807 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ICON" transform="translate(-3.000000, 0.000000)">
+            <g id="Group-2" transform="translate(3.000000, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask" transform="translate(7.996737, 12.000000) rotate(-180.000000) translate(-7.996737, -12.000000) "></g>
+                <rect id="Black" fill="#000000" mask="url(#mask-2)" transform="translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) " x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

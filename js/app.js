@@ -4,7 +4,7 @@ var comicsList = {
       "comicName": "Midnight Furies",
       "authorNames": "Jess Herron",
       "comicDescription": "Zoe is an ex-basketball-ace desperate for any way to play the game who was forced by the death of her parents to drop out of school and support her brothers. Luckily, her mysterious friend Chase can get her into the most off-the-wall tournament no one's ever heard of- one where you play for time added onto your life! But Zoe's gotta be careful. Chase is playing her own game... and it might cost them more than just points. ~~~~~ DRAMA/ACTION/SLOWBURN ROMANCE F|M F|F, 14+, updates 3x a month",
-      "comicGenres": [
+      "comicTags": [
         "Action",
         "Drama",
         "LGBTQ+"
@@ -17,7 +17,7 @@ var comicsList = {
       },
       {
         "badgeLink": "https://www.webtoons.com/en/challenge/midnight-furies/list?title_no=148753",
-        "comicServer": "webtoons"
+        "comicServer": "webtoon"
       },
       {
         "badgeLink": "https://www.patreon.com/jpherron",
@@ -32,7 +32,7 @@ var comicsList = {
       "comicName": "Long Exposure",
       "authorNames": "Mars Heyward",
       "comicDescription": "Long Exposure is an ongoing webcomic about a nerd and a bully who are forced to work on a class project together. The story revolves around them developing super powers after an incident at a strange research center, and finding themselves followed by a mysterious car, overcoming personal challenges, and (most importantly) discovering how gay they are for each other.",
-      "comicGenres": [
+      "comicTags": [
         "Superheroes",
         "Drama",
         "LGBTQ+"
@@ -55,7 +55,7 @@ var comicsList = {
       "comicName": "Meow Man",
       "authorNames": "What Who's This",
       "comicDescription": "What if your dream date turns out to be... a cat? Such is the dilemma for Bonnie, a young woman who wanted love and ended up with Claude, a highly needy half-man-half-cat instead. Will they be able to make it work? Is sharing the litterbox going to be a huge problem? And what ARE her friends going to think? Read Meow Man to see how this big ball of yarn unfurls.",
-      "comicGenres": [
+      "comicTags": [
         "Comedy",
         "Drama",
         "Romance"
@@ -86,9 +86,9 @@ var comicsList = {
       "comicName": "TEST 4 SUPER LONG NAME SUPER SUPER SUPER WOWZERS",
       "authorNames": "Naomi Watson",
       "comicDescription": "After making a grisly discovery in the countryside, a small town book editor’s life gets entangled with a young Mafia lord and his intimidating bodyguard...even as every step she takes draws her deeper into the dangerous underworld of the city.",
-      "comicGenres": [
+      "comicTags": [
         "Drama",
-        "Romanace"
+        "Romance"
         ],
       "comicCarouselImage": "",
       "comicGridImage": "",
@@ -108,7 +108,7 @@ var comicsList = {
       "comicName": "Boo",
       "authorNames": "Sherlock Buttface",
       "comicDescription": "After binge-watching beauty videos online, a shy, comic book fan masters the art of make-up, then sees her social standing skyrocket as she becomes her school’s prettiest pretty girl literally overnight. But will her elite status be short lived? How long can she keep her “real self” a secret? And what about that cute boy she likes? Could you imagine if he found out the truth?",
-      "comicGenres": [
+      "comicTags": [
         "Romance",
         "Drama"
         ],
@@ -130,9 +130,9 @@ var comicsList = {
       "comicName": "Lavender Jack",
       "authorNames": "Dan Who",
       "comicDescription": "After the departure of Detective Theresa Ferrier and the defeat of Lord and Lady Hawthorne, the City of Gallery is left in the clawed hands of its vigilante hero, Lavender Jack. But as the City prepares for a divisive mayoral election, a new menace emerges from the shadows -- The Black Note, a masked phantom sowing disharmony and destruction among Gallery and its citizens. Will Lavender Jack be able end this symphony of terror? Or will this be his final curtain call...?",
-      "comicGenres": [
+      "comicTags": [
         "Action",
-        "Mystert"
+        "Mystery"
         ],
       "comicCarouselImage": "",
       "comicGridImage": "",
@@ -156,7 +156,7 @@ var comicsList = {
       "comicName": "Make it Stop",
       "authorNames": "Mcmaster Mclongname Whoevenisthis Gilleazeu",
       "comicDescription": "“Mom, I’m sorry. Please don’t die.” When Henry realizes death is at his mother’s doorstep, he strikes a deal with a lifespan dealer to give years of his own life to his ailing mother. Now, his mother is a 20-year-old college student with a full life ahead of her, and Henry devotes his remaining days to helping her live life to the fullest. But things turn complicated when his friend falls in love with her! **What the everliving fuck*",
-      "comicGenres": [
+      "comicTags": [
         "Romance",
         "Horror",
         "LGBTQ+"
@@ -180,7 +180,7 @@ var comicsList = {
       "comicName": "Yumi's Cells",
       "authorNames": "Boo boo",
       "comicDescription": "A story of Yumi and her brain cells.",
-      "comicGenres": [
+      "comicTags": [
         "Horror",
         "Mystery",
         "LGBTQ+"
@@ -204,7 +204,7 @@ var comicsList = {
       "comicName": "Suihira: The City of Water",
       "authorNames": "Your Mom",
       "comicDescription": "Her whole life, Princess Wahida has prayed for passage to “Suihira,” the holy City of Water, lost to time & myth. When the goddess Akia appears before her & declares Wahida to be worthy of her city, the zealous princess doesn’t think twice before venturing into the wilderness. However, Wahida finds she needs more than faith to brave the journey. •Updates every 4 weeks on Wed 12AM PT •Rated 12+ for mild swearing, partial nudity, some violence &intense situations •Social Media:@Suihira/@ArtByRiana",
-      "comicGenres": [
+      "comicTags": [
         "Fantasy",
         "Drama",
         "Mystery"
@@ -213,7 +213,7 @@ var comicsList = {
       "comicGridImage": "",
       "comicBadges": [{
         "badgeLink": "https://www.webtoons.com/en/challenge/suihira-the-city-of-water/list?title_no=39385",
-        "comicServer": "webtoons"
+        "comicServer": "webtoon"
       }]
     }
   ]
@@ -245,7 +245,7 @@ ready(function(){
     //console.log(index);
 
     //Build Slides
-    console.log(document.getElementsByClassName('glide__slides'));
+    //console.log(document.getElementsByClassName('glide__slides'));
     var slideNode = document.createElement('li');
     slideNode.classList.add('glide__slide');
 
@@ -264,19 +264,27 @@ ready(function(){
         comicsList.comicsData[index].comicBadges.forEach(function(el, index, array){
             //var badgeString = document.createTextNode('<img src="images/logo_square.png">');
             var slideNodeBottomIcon = document.createElement('img');
-            slideNodeBottomIcon.setAttribute('src', 'images/logo_square.png');
+            slideNodeBottomIcon.setAttribute('src', 'images/brand_icons/icon_'+el.comicServer+'.png');
             slideNodeBottomIcons.appendChild(slideNodeBottomIcon);
         });
         slideNodeBottom.appendChild(slideNodeBottomIcons);
 
         var slideNodeBottomDescription = document.createElement('div');
         slideNodeBottomDescription.classList.add('glide-slide-bottom-description');
+        slideNodeBottomDescription.classList.add('slide-line-clamp');
         var slideNodeBottomDescriptionText = document.createTextNode(comicsList.comicsData[index].comicDescription);
         slideNodeBottomDescription.appendChild(slideNodeBottomDescriptionText);
         slideNodeBottom.appendChild(slideNodeBottomDescription);
 
         var slideNodeBottomTags = document.createElement('div');
         slideNodeBottomTags.classList.add('glide-slide-bottom-tags');
+        comicsList.comicsData[index].comicTags.forEach(function(el, index, array){
+            console.log(el);
+            //var badgeString = document.createTextNode('<img src="images/logo_square.png">');
+            var slideNodeBottomTag = document.createTextNode(el);
+            slideNodeBottomTags.appendChild(slideNodeBottomTag);
+            console.log()
+        });
         slideNodeBottom.appendChild(slideNodeBottomTags);
 
     slideNode.appendChild(slideNodeBottom);

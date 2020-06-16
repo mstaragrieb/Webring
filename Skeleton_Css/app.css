@@ -18,13 +18,13 @@ $morning-blue: #839ea1ff;
   --source-sans-font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --glide-button-background: #208996;
   --glide-button-background-alpha: 0.68;
+  --lh: 1.6rem;
 }
 
 /* Body Overrides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
-    font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-    line-height: 1.6;
+    line-height: 2rem;
     font-weight: 400;
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #222; }
@@ -206,13 +206,14 @@ h6 {
 }
 
 .glide__slide{
-
+    border-left: 2px solid #979797;
 }
 
 .glide-slide-top{
     height: 40rem;
     width:  27rem;
     margin-bottom:1rem;
+    overflow: hidden;
 }
 
 .glide-slide-bottom{
@@ -252,14 +253,31 @@ opacity: 0.68;
 }
 
 .glide-slide-bottom-tags{
-    height: 48px;
-    width: 217px;
+    height: 4.8rem;
+    width: 21.7rem;
     color: var(--light-text-colored);
     font-family: var(--roboto-font-family);
-    font-size: 18px;
+    font-size: 1.8rem;
     letter-spacing: 0;
-    line-height: 24px;
+    line-height: 2.4rem;
 }
+
+.glide-slide-bottom-description{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Weird Webkit thing that works in FF and Edge */
+.slide-line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+
+
 @media all and (min-width: 550px) {
     .logo{
     order: 1;
