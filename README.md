@@ -6,13 +6,15 @@ To view development progress download and then extract, view index.html file.
 
 # TODO
 - [ ] JSON Data
-    - [ ] Finish Manual Data build
+    - [x] Finish Manual Data build
     - [ ] Wire Data to DOM
+        - [x] Slides
+        - [ ] Grid
  - [ ] Finish Layout
-     - [ ] Test with images
-     - [ ] Border between slides
-	 - [ ] Glide Button Bar interrupts swipe
-	 - [ ] Categories block in carousel
+     - [x] Test with images
+     - [x] Border between slides
+	 - [x] Glide Button Bar interrupts swipe
+	 - [x] Categories block in carousel
 	 - [ ] Comics Grid
  - [ ] Convert to Wordpress Theme
  - [ ] Build Toolchain Build
