@@ -69,7 +69,43 @@ h6 {
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button {
-    border-radius: 100px;
+    border: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    white-space: nowrap;
+    border-radius: 0px;
+    color: var(--dark-text);
+    font-weight: normal;
+    margin-bottom: 0;
+
+}
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: var(--dark-text);
+  border: 0;
+}
+.dark {
+    font-size: 1.8rem;
+    background-color: var(--dark-background);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: var(--roboto-font-family);
+}
+
+.light {
+    font-size: 1.8rem;
+    background-color: var(--light-background);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: var(--roboto-font-family);
 }
 
 /* Links Overrides
@@ -206,13 +242,13 @@ a:hover {
     line-height: 4.2rem;
 }
 
-.nav-button{
+/* .nav-button{
     font-size: 1.8rem;
     background-color: var(--dark-background);
     padding-left: 1rem;
     padding-right: 1rem;
     font-family: var(--roboto-font-family);
-}
+} */
 
 .drawer-toggle{
     margin: 0;
@@ -336,8 +372,38 @@ top: 13.5rem;
     line-height: 3.2rem;
 }
 
+.comics-grid-left{
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+}
 
+.comics-grid-right{
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+}
 
+.comics-grid-element-left{
+    flex: 1 0 14rem;
+    padding-right: .5rem;
+    font-family: var(--roboto-font-family);
+    font-size: 1.4rem;
+    line-height:1.9rem;
+}
+
+.comics-grid-element-right{
+    flex: 1 0 14rem;
+    padding-left: .5rem;
+    font-family: var(--roboto-font-family);
+    font-size: 1.4rem;
+    line-height:1.9rem;
+}
+
+.comics-grid-icon{
+    height:1.6rem;
+    width:1.6rem;
+}
 @media all and (min-width: 650px) {
     .header-wrapper{
         justify-content: space-between;
@@ -365,6 +431,7 @@ top: 13.5rem;
         width: 34rem;
         flex: 0 0 0;
         order: 3;
+        line-height: inherit;
     }
     .header {
         height: 4.2rem;
