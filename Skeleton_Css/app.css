@@ -291,6 +291,15 @@ a:hover {
     overflow: hidden;
 }
 
+.glide-slide-top-title{
+    position: relative;
+    top: -10rem;
+    font-family: var(--roboto-font-family);
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    padding-left: 1rem;
+}
+
 .glide-slide-bottom{
 
 }

@@ -240,6 +240,11 @@ function ready(callbackFunc) {
 
 ready(function(){
     // Build Dom Content
+    if (typeof comicsGridLoopCounter === 'undefined') {
+        // variable_name has been set, so run this code
+        var comicsGridLoopCounter = 1;
+        var row=1;
+    };
     comicsList.comicsData.forEach(function(el, index, array){
     //console.log(el);
     //console.log(index);
@@ -255,7 +260,10 @@ ready(function(){
     //slideNodeTop.classList.add('u-max-full-width');
     slideNodeTop.innerHTML='<img src="comic_images/' + index +'/slide.jpg">'  //height="100%" width="240"
     slideNode.appendChild(slideNodeTop);
-
+    var slideNodeTopTitle = document.createElement('div');
+    slideNodeTopTitle.classList.add('glide-slide-top-title');
+    slideNodeTopTitle.innerHTML = comicsList.comicsData[index].comicName  //height="100%" width="240"
+    slideNode.appendChild(slideNodeTopTitle);
 
     var slideNodeBottom = document.createElement('div');
     slideNodeBottom.classList.add('glide-slide-bottom');
@@ -316,6 +324,160 @@ ready(function(){
       //       </div>
       //   </li>
       // `);
+
+
+    // Build Grid DOM
+    console.log('index' + index);
+    switch (comicsGridLoopCounter) {
+        case 1:
+            var gridRow = document.createElement('div');
+            gridRow.classList.add('row');
+            gridRow.setAttribute('id', 'comic-grid-row-'+row);
+            document.getElementById('comics-grid-container').appendChild(gridRow);
+
+            var gridRowLeftColumn = document.createElement('div');
+            gridRowLeftColumn.classList.add('one-half');
+            gridRowLeftColumn.classList.add('column');
+            gridRow.appendChild(gridRowLeftColumn);
+
+            var gridRowLeftColumnPull = document.createElement('div');
+            gridRowLeftColumnPull.classList.add('comics-grid-left');
+            gridRowLeftColumnPull.setAttribute('id', 'comic-grid-left-'+row);
+            gridRowLeftColumn.appendChild(gridRowLeftColumnPull);
+
+            var gridRowLeftColumnPullLeftElm = document.createElement('div');
+            gridRowLeftColumnPullLeftElm.classList.add('comics-grid-element-left');
+            gridRowLeftColumnPull.appendChild(gridRowLeftColumnPullLeftElm);
+            gridRowLeftColumnPullLeftElm.innerHTML='<img src="comic_images/' + index +'/grid.jpg" class="u-max-full-width"><br />' + comicsList.comicsData[index].comicName  //height="100%" width="240"
+
+            var gridIcons = document.createElement('div');
+            gridIcons.classList.add('comics-grid-icons');
+            gridRowLeftColumnPullLeftElm.appendChild(gridIcons);
+            comicsList.comicsData[index].comicBadges.forEach(function(el, index, array){
+                //var badgeString = document.createTextNode('<img src="images/logo_square.png">');
+                var gridIcon = document.createElement('img');
+                gridIcon.setAttribute('src', 'images/brand_icons/icon_'+el.comicServer+'.png');
+                gridIcon.classList.add('comics-grid-icon');
+                gridIcons.appendChild(gridIcon);
+            });
+            comicsGridLoopCounter++;
+            break;
+        case 2:
+            var gridRowLeftColumnPullRightElm = document.createElement('div');
+            gridRowLeftColumnPullRightElm.classList.add('comics-grid-element-right');
+            // gridRowLeftColumnPull.appendChild(gridRowLeftColumnPullRightElm);
+            document.getElementById('comic-grid-left-'+row).appendChild(gridRowLeftColumnPullRightElm);
+            gridRowLeftColumnPullRightElm.innerHTML='<img src="comic_images/' + index +'/grid.jpg" class="u-max-full-width"><br />' + comicsList.comicsData[index].comicName  //height="100%" width="240"
+
+            var gridIcons = document.createElement('div');
+            gridIcons.classList.add('comics-grid-icons');
+            gridRowLeftColumnPullRightElm.appendChild(gridIcons);
+            comicsList.comicsData[index].comicBadges.forEach(function(el, index, array){
+                //var badgeString = document.createTextNode('<img src="images/logo_square.png">');
+                var gridIcon = document.createElement('img');
+                gridIcon.setAttribute('src', 'images/brand_icons/icon_'+el.comicServer+'.png');
+                gridIcon.classList.add('comics-grid-icon');
+                gridIcons.appendChild(gridIcon);
+            });
+            comicsGridLoopCounter++;
+            break;
+        case 3:
+            var gridRowRightColumn = document.createElement('div');
+            gridRowRightColumn.classList.add('one-half');
+            gridRowRightColumn.classList.add('column');
+            document.getElementById('comic-grid-row-'+row).appendChild(gridRowRightColumn);
+
+            var gridRowRightColumnPull = document.createElement('div');
+            gridRowRightColumnPull.classList.add('comics-grid-right');
+            gridRowRightColumnPull.setAttribute('id', 'comic-grid-right-'+row);
+            gridRowRightColumn.appendChild(gridRowRightColumnPull);
+
+            var gridRowRightColumnPullLeftElm = document.createElement('div');
+            gridRowRightColumnPullLeftElm.classList.add('comics-grid-element-left');
+            gridRowRightColumnPull.appendChild(gridRowRightColumnPullLeftElm);
+            gridRowRightColumnPullLeftElm.innerHTML='<img src="comic_images/' + index +'/grid.jpg" class="u-max-full-width"><br />' + comicsList.comicsData[index].comicName  //height="100%" width="240"
+
+            var gridIcons = document.createElement('div');
+            gridIcons.classList.add('comics-grid-icons');
+            gridRowRightColumnPullLeftElm.appendChild(gridIcons);
+            comicsList.comicsData[index].comicBadges.forEach(function(el, index, array){
+                //var badgeString = document.createTextNode('<img src="images/logo_square.png">');
+                var gridIcon = document.createElement('img');
+                gridIcon.setAttribute('src', 'images/brand_icons/icon_'+el.comicServer+'.png');
+                gridIcon.classList.add('comics-grid-icon');
+                gridIcons.appendChild(gridIcon);
+            });
+            comicsGridLoopCounter++;
+            break;
+        case 4:
+            var gridRowRightColumnPullRightElm = document.createElement('div');
+            gridRowRightColumnPullRightElm.classList.add('comics-grid-element-right');
+            document.getElementById('comic-grid-right-'+row).appendChild(gridRowRightColumnPullRightElm);
+            gridRowRightColumnPullRightElm.innerHTML='<img src="comic_images/' + index +'/grid.jpg" class="u-max-full-width"><br />' + comicsList.comicsData[index].comicName  //height="100%" width="240"
+
+            var gridIcons = document.createElement('div');
+            gridIcons.classList.add('comics-grid-icons');
+            gridRowRightColumnPullRightElm.appendChild(gridIcons);
+            comicsList.comicsData[index].comicBadges.forEach(function(el, index, array){
+                //var badgeString = document.createTextNode('<img src="images/logo_square.png">');
+                var gridIcon = document.createElement('img');
+                gridIcon.setAttribute('src', 'images/brand_icons/icon_'+el.comicServer+'.png');
+                gridIcon.classList.add('comics-grid-icon');
+                gridIcons.appendChild(gridIcon);
+            });
+            comicsGridLoopCounter = 1;
+            row++
+
+    }
+
+
+    // <div class="row">
+    //     <div class="one-half column">
+    //         <div class="comics-grid-left">
+    //             <div class="comics-grid-element-left">
+    //                 <img src="comic_images/0/grid.jpg"  class="u-max-full-width"><br />
+    //                 Title of series
+    //                 <div class="comics-grid-icons">
+    //                     <img src="images/brand_icons/icon_patreon.png" class="comics-grid-icon">
+    //                     <img src="images/brand_icons/icon_patreon.png" class="comics-grid-icon">
+    //                     <img src="images/brand_icons/icon_patreon.png" class="comics-grid-icon">
+    //                 </div>
+    //             </div>
+    //             <div class="comics-grid-element-right">
+    //                 <img src="comic_images/1/grid.jpg" class="u-max-full-width"><br />
+    //                 Title of series
+    //                 <div class="comics-grid-icons">
+    //                     <img src="images/brand_icons/icon_patreon.png" class="comics-grid-icon ">
+    //                     <img src="images/brand_icons/icon_patreon.png" class="comics-grid-icon">
+    //                     <img src="images/brand_icons/icon_patreon.png" class="comics-grid-icon">
+    //                 </div>
+    //             </div>
+    //         </div>
+    //     </div>
+    //     <div class="one-half column">
+    //         <div class="comics-grid-right">
+    //             <div class="comics-grid-element-left">
+    //                 <img src="comic_images/2/grid.jpg"  class="u-max-full-width"><br />
+    //                 Title of series
+    //                 <div class="comics-grid-icons">
+    //                     <img src="images/brand_icons/icon_patreon.png" class="comics-grid-icon">
+    //                     <img src="images/brand_icons/icon_patreon.png" class="comics-grid-icon">
+    //                     <img src="images/brand_icons/icon_patreon.png" class="comics-grid-icon">
+    //                 </div>
+    //             </div>
+    //             <div class="comics-grid-element-right">
+    //                 <img src="comic_images/3/grid.jpg" class="u-max-full-width"><br />
+    //                 Title of series
+    //                 <div class="comics-grid-icons">
+    //                     <img src="images/brand_icons/icon_patreon.png" class="comics-grid-icon ">
+    //                     <img src="images/brand_icons/icon_patreon.png" class="comics-grid-icon">
+    //                     <img src="images/brand_icons/icon_patreon.png" class="comics-grid-icon">
+    //                 </div>
+    //             </div>
+    //         </div>
+    //     </div>
+    // </div>
+
     });
 });
 
