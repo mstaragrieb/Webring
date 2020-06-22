@@ -7,22 +7,25 @@ $medium-aquamarine: #61e6adff;
 $morning-blue: #839ea1ff;
 */
 :root {
-  --light-background: #c3ffe7ff;
-  --dark-background: #94f3cbff;
-  --bright-background: #61e6adff;
-  --separator: #979797;
-  --light-text: #FFF;
-  --dark-text: #000;
-  --light-text-colored:#3DC4D3;
-  --roboto-font-family: "Roboto Condensed", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --source-sans-font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --glide-button-background: #208996;
-  --glide-button-background-alpha: 0.68;
-  --lh: 1.6rem;
-/* Breakpoints */
-  --phone-breakpoint: 55rem;
-  --tablet-desktop-breakpoint 80rem;
-  --full-hd-breakpoint: 120rem;
+    --primary: #34C5A3;
+    /* --dark-background: #94f3cbff; */
+    --primary-varient: #208288;
+    --error: red;
+    --light-text: #FFF;
+    --dark-text: #000;
+    --background: #F0F0F0;
+    --gray1: #DBDCE1;
+    --gray2: #9194A1;
+    --grey3: #3D3F48;
+    --roboto-font-family: "Roboto Condensed", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --source-sans-font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --glide-button-background: #FFF;
+    --glide-button-background-alpha: 0.62;
+    --lh: 1.6rem;
+    /* Breakpoints */
+    --phone-breakpoint: 55rem;
+    --tablet-desktop-breakpoint 80rem;
+    --full-hd-breakpoint: 120rem;
 
 }
 
@@ -32,7 +35,7 @@ body {
     line-height: 2rem;
     font-weight: 400;
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #222; }
+    color: var(--dark-text) }
 
 /* Typography Overrides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -74,7 +77,6 @@ h6 {
     box-sizing: border-box;
     white-space: nowrap;
     border-radius: 0px;
-    color: var(--dark-text);
     font-weight: normal;
     margin-bottom: 0;
 
@@ -94,10 +96,14 @@ input[type="button"]:focus {
 }
 .dark {
     font-size: 1.8rem;
-    background-color: var(--dark-background);
+    color: var(--primary);
     padding-left: 1rem;
     padding-right: 1rem;
     font-family: var(--roboto-font-family);
+}
+
+.dark:hover{
+    color: var(--primary-varient);
 }
 
 .light {
@@ -223,7 +229,7 @@ a:hover {
 }
 
 .header {
-    background-color: var(--light-background);
+    background-color: var(--grey3);
 }
 
 .nav-wrapper {
@@ -236,7 +242,7 @@ a:hover {
     width: 4.20rem;
     height: 4.20rem;
     flex: 0 1 auto;
-    background-color: var(--dark-background);
+    /* background-color: var(--dark-background); */
     color: var(--light-text);
     font-size: 4.2rem;
     line-height: 4.2rem;
@@ -261,6 +267,7 @@ a:hover {
     line-height: 4.2rem;
     flex: 2 0 21.60rem;
     font-family: var(--roboto-font-family);
+    color: var(--light-text);
 
 }
 
@@ -303,7 +310,7 @@ a:hover {
 }
 
 .glide__arrows{
-
+    display: none;
 }
 
 .glide__arrow{
@@ -313,16 +320,16 @@ padding: 0rem;
 width: 3.2rem;
 /* padding: 0 30px; */
 color: #FFF;
-fill: #FFF;
+fill: var(--primary);
 text-align: center;
 /* font-size: 11px; */
 /* font-weight: 600; */
 line-height: 0rem;
-background-color: #208996;
+background-color: var(--glide-button-background);
 border-radius: 4px;
 border: 0px solid #bbb;
 box-sizing: border-box;
-opacity: 0.68;
+opacity: var(--glide-button-background-alpha);
 position: absolute;
 top: 13.5rem;
 }
@@ -416,7 +423,6 @@ top: 13.5rem;
         justify-content: space-between;
         padding-top: 1rem;
     }
-
     .nav-wrapper{
         justify-content: space-around;
     }
@@ -448,6 +454,10 @@ top: 13.5rem;
     [type=checkbox].drawer + * {
         display: flex;
         border: 0;
+    }
+
+    .glide__arrows{
+        display: block;
     }
 }
 
