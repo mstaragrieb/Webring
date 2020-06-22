@@ -479,10 +479,9 @@ ready(function(){
     // </div>
 
     });
-});
 
 
-ready(function() {
+
   // your code here
   new Glide('.glide', {
     type: 'carousel',
@@ -494,9 +493,40 @@ ready(function() {
     focusAt: 0,
     breakpoints: {
         1200: {
+            perView: 5,
+            peek: {
+                before: 0,
+                after: 80
+            }
+        },
+        1100: {
+            perView: 5
+        },
+        1000: {
+            perView: 4,
+            peek: {
+                before: 0,
+                after: 80
+            }
+        },
+        900: {
             perView: 4
         },
         800: {
+            perView: 3,
+            peek: {
+                before: 0,
+                after: 80
+            }
+        },
+        750: {
+            perView: 3,
+            peek: {
+                before: 0,
+                after: 40
+            }
+        },
+        700: {
             perView: 3
         },
         600: {
@@ -506,11 +536,28 @@ ready(function() {
                 after: 80
             }
         },
+        550: {
+            perView: 2
+        },
         450: {
             perView: 1,
             peek: {
                 before: 0,
+                after: 120
+            }
+        },
+        400: {
+            perView: 1,
+            peek: {
+                before: 0,
                 after: 80
+            }
+        },
+        300: {
+            perView: 1,
+            peek: {
+                before: 0,
+                after: 40
             }
         }
     }

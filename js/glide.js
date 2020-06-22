@@ -1511,6 +1511,7 @@
        * @return {Object}
        */
       set: function set(r) {
+        console.log(r)
         if (isString(r)) {
           r = document.querySelector(r);
         }
