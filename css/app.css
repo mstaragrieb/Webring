@@ -291,6 +291,21 @@ a:hover {
     border-left: 2px solid #979797;
 }
 
+line {
+  stroke: orange;
+  stroke-width: 20;
+}
+
+
+.glide-slide-content{
+
+}
+
+.glide-slide-separator{
+
+}
+
+
 .glide-slide-top{
     height: 40rem;
     /*  */

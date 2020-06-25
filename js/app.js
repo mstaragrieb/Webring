@@ -259,11 +259,11 @@ ready(function(){
     slideNodeTop.classList.add('glide-slide-top');
     //slideNodeTop.classList.add('u-max-full-width');
     slideNodeTop.innerHTML='<img src="comic_images/' + index +'/slide.jpg">'  //height="100%" width="240"
-    slideNode.appendChild(slideNodeTop);
+    //slideNode.appendChild(slideNodeTop);
     var slideNodeTopTitle = document.createElement('div');
     slideNodeTopTitle.classList.add('glide-slide-top-title');
     slideNodeTopTitle.innerHTML = comicsList.comicsData[index].comicName  //height="100%" width="240"
-    slideNode.appendChild(slideNodeTopTitle);
+    //slideNode.appendChild(slideNodeTopTitle);
 
     var slideNodeBottom = document.createElement('div');
     slideNodeBottom.classList.add('glide-slide-bottom');
@@ -299,7 +299,7 @@ ready(function(){
         });
         slideNodeBottom.appendChild(slideNodeBottomTags);
 
-    slideNode.appendChild(slideNodeBottom);
+    //slideNode.appendChild(slideNodeBottom);
 
 
     //var textnode = document.createTextNode("Water");
