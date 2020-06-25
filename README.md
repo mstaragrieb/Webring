@@ -4,6 +4,7 @@ The root of a future webring site and set of sites.
 
 To view development progress download and then extract, view index.html file.
 
+
 # TODO
 - [ ] JSON Data
     - [x] Finish Manual Data build
@@ -29,5 +30,6 @@ To view development progress download and then extract, view index.html file.
 
  # ISSUES
 - [ ] Last Item in Grid too Wide on Odd
-- [ ] Color of Title on Slides Problems
-- [ ] Problems with Size of Title in Grid and locations
+- [x] Color of Title on Slides Problems
+- [x] Problems with Size of Title in Grid and locations
+- [ ] Code Refactor

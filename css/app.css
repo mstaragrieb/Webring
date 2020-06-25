@@ -22,6 +22,10 @@ $morning-blue: #839ea1ff;
     --glide-button-background: #FFF;
     --glide-button-background-alpha: 0.62;
     --lh: 1.6rem;
+
+    --global-whitespace: 1.2rem;
+    --global-whitespace-half: 0.6rem;
+
     /* Breakpoints */
     --phone-breakpoint: 55rem;
     --tablet-desktop-breakpoint 80rem;
@@ -34,15 +38,13 @@ $morning-blue: #839ea1ff;
 body {
     line-height: 2rem;
     font-weight: 400;
-    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: var(--dark-text) }
+    font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
+    color: var(--grey3);
+}
 
 /* Typography Overrides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-body {
-    font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
-}
 h1 {
     font-family: "Roboto Condensed", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 4.0rem; line-height: 1.2;    letter-spacing: -.1rem;
@@ -68,8 +70,7 @@ h6 {
     font-size: 1.5rem; line-height: 1.6;    letter-spacing: 0;
 }
 
-
-/* Shared
+/* Form Overrides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button {
     border: 0;
@@ -78,8 +79,13 @@ h6 {
     white-space: nowrap;
     border-radius: 0px;
     font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
     margin-bottom: 0;
-
+    background-color: var(--primary);
+    color: var(--light-text);
+    height:4.2rem;
+    font-family: var(--roboto-font-family);
 }
 .button:hover,
 button:hover,
@@ -91,45 +97,49 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: var(--dark-text);
-  border: 0;
+    background-color: var(--primary-varient);
+    border-radius: 0px;
+    border-color: #FFF;
+    color: var(--light-text);
 }
-.dark {
-    font-size: 1.8rem;
-    color: var(--primary);
-    padding-left: 1rem;
-    padding-right: 1rem;
+
+.select-button {
+    border: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    white-space: nowrap;
+    border-radius: 0px;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-bottom: 0;
+    background-color: var(--grey3);
+    color: var(--light-text);
+    height:4.2rem;
     font-family: var(--roboto-font-family);
 }
 
-.dark:hover{
-    color: var(--primary-varient);
-}
-
-.light {
-    font-size: 1.8rem;
-    background-color: var(--light-background);
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-family: var(--roboto-font-family);
+.select-button::after {
+    content: " ≡ ";
 }
 
 /* Links Overrides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #222;
-  text-decoration: none;
+    color: var(--primary);
+    font-family: var(--roboto-font-family);
+    text-decoration: none;
 }
 a:hover {
-  color: #222;
+    color: var(--primary-varient);
     text-decoration: none;
 }
 
 /* Container Overrides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: var(--global-whitespace);;
+    padding-right: var(--global-whitespace);;
 }
 /* Drawer
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
@@ -138,6 +148,7 @@ a:hover {
     position: relative;
     vertical-align: bottom;
     content: " ≡ ";
+    color: var(--primary);
     /* font-family: sans-serif;
     font-size: 1.5em; */
 }
@@ -175,13 +186,13 @@ a:hover {
 }
 [type=checkbox].drawer + * .drawer-close {
     position: absolute;
-    top: var(--universal-margin);
-    right: var(--universal-margin);
+    /* top: var(--universal-margin);
+    right: var(--universal-margin); */
     z-index: 1111;
     width: 2rem;
     height: 2rem;
     /* border-radius: var(--universal-border-radius); */
-    padding: 1rem;
+    padding: var(--global-whitespace);;
     margin: 0;
     cursor: pointer;
     transition: background 0.3s;
@@ -248,13 +259,12 @@ a:hover {
     line-height: 4.2rem;
 }
 
-/* .nav-button{
+.nav-link{
     font-size: 1.8rem;
-    background-color: var(--dark-background);
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-family: var(--roboto-font-family);
-} */
+    padding-left: var(--global-whitespace);;
+    padding-right: var(--global-whitespace);;
+    line-height: 4.2rem;
+}
 
 .drawer-toggle{
     margin: 0;
@@ -271,13 +281,6 @@ a:hover {
 
 }
 
-.logo{
-    width: 4.20rem;
-    height: 4.20rem;
-    flex: 0 1 auto;
-    background-image: url("../images/logo_square.png");
-}
-
 .glide {
 
 }
@@ -288,23 +291,8 @@ a:hover {
 
 .glide__slide{
     margin-left: 0;
-    border-left: 2px solid #979797;
+    border-right: .3rem solid var(--grey3);
 }
-
-line {
-  stroke: orange;
-  stroke-width: 20;
-}
-
-
-.glide-slide-content{
-
-}
-
-.glide-slide-separator{
-
-}
-
 
 .glide-slide-top{
     height: 40rem;
@@ -315,9 +303,19 @@ line {
 
 .glide-slide-top-title{
     font-family: var(--roboto-font-family);
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     line-height: 3.2rem;
     padding-left: 1rem;
+    height: 6.2rem;
+    color: var(--dark-text);
+}
+
+/* Weird Webkit thing that works in FF and Edge */
+.slide-title-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .glide-slide-bottom{
@@ -358,27 +356,34 @@ top: 13.5rem;
 }
 
 .glide-slide-bottom-icons{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1.6rem;
+    padding-left: var(--global-whitespace-half);;
+    padding-right: var(--global-whitespace-half);;
+    padding-top: var(--global-whitespace-half);
+}
+
+.glide-slide-bottom-icon{
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-left: .6rem;
+    margin-right: .6rem;
 }
 
 .glide-slide-bottom-tags{
     height: 4.8rem;
-    color: var(--light-text-colored);
+    color: var(--primary);
     font-family: var(--roboto-font-family);
     font-size: 1.8rem;
     letter-spacing: 0;
     line-height: 2.4rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1.6rem;
+    margin-left: var(--global-whitespace);
+    margin-right: var(--global-whitespace);
+    margin-top: var(--global-whitespace);
 }
 
 .glide-slide-bottom-description{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1.6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: var(--global-whitespace-half);
     height:20rem;
 }
 
@@ -397,8 +402,29 @@ top: 13.5rem;
 .comics-filters-title{
     font-family: var(--roboto-font-family);
     font-weight: bold;
-    font-size: 2.4rem;
-    line-height: 3.2rem;
+    font-size: 2.0rem;
+    line-height: 2.6rem;
+    color: var(--light-text);
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+    background-color: var(--grey3);
+    text-align: center;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+.comics-filters-tags-button{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.comics-tags-holder{
+    text-align: center;
+    /* margin-top: 2rem; */
+}
+
+.comics-filters-tag-button{
+    margin:1rem;
 }
 
 .comics-grid-left{
@@ -433,6 +459,43 @@ top: 13.5rem;
     height:1.6rem;
     width:1.6rem;
 }
+
+.grid-title-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 0.8rem;
+  margin-bottom: 2.0rem;
+}
+
+.footer{
+    background-color: var(--grey3);
+    height: 6.3rem;
+    color: var(--light-text);
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    flex: 0 0 10rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-align: center;
+    font-family: var(--roboto-font-family);
+}
+
+.disclaimer{
+    flex: 0 0 17rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-weight: 300;
+}
+
 @media all and (min-width: 650px) {
     .header-wrapper{
         justify-content: space-between;
@@ -442,11 +505,6 @@ top: 13.5rem;
         justify-content: space-around;
     }
 
-    .logo{
-        order: 1;
-        width: 10rem;
-        background-image: url("../images/logo_full.png");
-    }
     .ring-title{
         background-color: var(--dark-background);
         flex: 0 0 0;
