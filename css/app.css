@@ -1,3 +1,8 @@
+/*Building Normalzing*/
+html {
+    font-size: 62.5%;
+}
+
 /* Colors
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
@@ -70,6 +75,26 @@ h6 {
     font-size: 1.5rem; line-height: 1.6;    letter-spacing: 0;
 }
 
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+  list-style: circle inside; }
+ol {
+  list-style: decimal inside; }
+ol, ul {
+  padding-left: 0;
+  margin-top: 0;
+  }
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+li {
+  margin-bottom: 1rem; }
+
+
 /* Form Overrides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button {
@@ -135,11 +160,41 @@ a:hover {
     text-decoration: none;
 }
 
-/* Container Overrides
+/* New Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
-    padding-left: var(--global-whitespace);;
-    padding-right: var(--global-whitespace);;
+/* .container {
+    padding-left: var(--global-whitespace);
+    padding-right: var(--global-whitespace);
+}
+.column,
+.columns {
+  margin-left: var(--global-whitespace); } */
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    /* padding: 0 1rem; */
+    box-sizing: border-box; }
+
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-row > * {
+    flex: 1 100%;
+
+}
+.one-half {
+  flex: 1 0 30rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.one-half.right {
+  /* margin-left: var(--global-whitespace); */
 }
 /* Drawer
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
@@ -441,7 +496,7 @@ top: 13.5rem;
 
 .comics-grid-element-left{
     flex: 1 0 14rem;
-    padding-right: .5rem;
+    margin-right: 1rem;
     font-family: var(--roboto-font-family);
     font-size: 1.4rem;
     line-height:1.9rem;
@@ -449,7 +504,7 @@ top: 13.5rem;
 
 .comics-grid-element-right{
     flex: 1 0 14rem;
-    padding-left: .5rem;
+    margin-left: 1rem;
     font-family: var(--roboto-font-family);
     font-size: 1.4rem;
     line-height:1.9rem;

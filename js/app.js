@@ -360,7 +360,7 @@ var webRing ={
       */
      setGrid : {
         init: function setGridFromComics(obj){
-            
+
          // Build Dom Content
          if (typeof comicsGridLoopCounter === 'undefined') {
              // variable_name has been set, so run this code
@@ -373,13 +373,13 @@ var webRing ={
          switch (comicsGridLoopCounter) {
              case 1:
                  var gridRow = document.createElement('div');
-                 gridRow.classList.add('row');
+                 gridRow.classList.add('flex-row');
                  gridRow.setAttribute('id', 'comic-grid-row-'+row);
                  document.getElementById('comics-grid-container').appendChild(gridRow);
 
                  var gridRowLeftColumn = document.createElement('div');
                  gridRowLeftColumn.classList.add('one-half');
-                 gridRowLeftColumn.classList.add('column');
+                 //gridRowLeftColumn.classList.add('column');
                  gridRow.appendChild(gridRowLeftColumn);
 
                  var gridRowLeftColumnPull = document.createElement('div');
@@ -426,7 +426,7 @@ var webRing ={
              case 3:
                  var gridRowRightColumn = document.createElement('div');
                  gridRowRightColumn.classList.add('one-half');
-                 gridRowRightColumn.classList.add('column');
+                 gridRowRightColumn.classList.add('right');
                  document.getElementById('comic-grid-row-'+row).appendChild(gridRowRightColumn);
 
                  var gridRowRightColumnPull = document.createElement('div');
