@@ -558,12 +558,12 @@ ready(function(){
 
 
   // your code here
-  new Glide('.glide', {
+  var ComicSelider=new Glide('.glide', {
     type: 'carousel',
     autoplay: 0,
     animationDuration: 600,
     animationTimingFunc: 'linear',
-    perView: 6,
+    perView: 8,
     gap:0,
     focusAt: 0,
     breakpoints: {
@@ -577,51 +577,104 @@ ready(function(){
         // 1100: {
         //     perView: 5
         // },
-        1200: {
-            perView: 4,
-            peek: {
-                before: 0,
-                after: 80
-            }
+        // 1217: {
+        //     perView: 5,
+        //     peek: {
+        //         before: 0,
+        //         after: 80
+        //     }
+        // },
+        // 1094: {
+        //     perView: 5
+        // },
+        // 1014: {
+        //     perView: 4,
+        //     peek: {
+        //         before: 0,
+        //         after: 80
+        //     }
+        // },
+        // 750: {
+        //     perView: 3,
+        //     peek: {
+        //         before: 0,
+        //         after: 40
+        //     }
+        // },
+        // 700: {
+        //     perView: 3
+        // },
+        // 600: {
+        //     perView: 2,
+        //     peek: {
+        //         before: 0,
+        //         after: 80
+        //     }
+        // },
+        // 550: {
+        //     perView: 2
+        // },
+        // 450: {
+        //     perView: 1,
+        //     peek: {
+        //         before: 0,
+        //         after: 120
+        //     }
+        // },
+        // 400: {
+        //     perView: 1,
+        //     peek: {
+        //         before: 0,
+        //         after: 80
+        //     }
+        // },
+        // 300: {
+        //     perView: 1,
+        //     peek: {
+        //         before: 0,
+        //         after: 40
+        //     }
+        // }
+        2121: {
+            perView: 7
         },
-        900: {
+        1818: {
+            perView: 6
+        },
+        1515: {
+            perView: 5
+        },
+        1212: {
             perView: 4
         },
-        800: {
+        989: {
             perView: 3,
             peek: {
                 before: 0,
                 after: 80
             }
         },
-        750: {
-            perView: 3,
-            peek: {
-                before: 0,
-                after: 40
-            }
-        },
-        700: {
+        909: {
             perView: 3
         },
-        600: {
+        686: {
             perView: 2,
             peek: {
                 before: 0,
                 after: 80
             }
         },
-        550: {
+        606: {
             perView: 2
         },
-        450: {
+        423: {
             perView: 1,
             peek: {
                 before: 0,
                 after: 120
             }
         },
-        400: {
+        383: {
             perView: 1,
             peek: {
                 before: 0,

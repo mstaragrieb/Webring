@@ -3793,6 +3793,8 @@
      * - window resize to update slider
      */
     Binder.on('resize', window, throttle(function () {
+      //console.log("hello");
+      //console.log(Breakpoints.match(points));
       Glide.settings = mergeOptions(settings, Breakpoints.match(points));
     }, Glide.settings.throttle));
 
