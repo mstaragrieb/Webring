@@ -516,7 +516,7 @@ top: 13.5rem;
     display: flex;
     flex-flow: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
