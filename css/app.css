@@ -189,8 +189,6 @@ a:hover {
 }
 .one-half {
   flex: 1 0 30rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .one-half.right {
@@ -464,8 +462,8 @@ top: 13.5rem;
     padding-bottom: 1.7rem;
     background-color: var(--grey3);
     text-align: center;
-    margin-left: 0.4rem;
-    margin-right: 0.4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .comics-filters-tags-button{
@@ -482,28 +480,15 @@ top: 13.5rem;
     margin:1rem;
 }
 
-.comics-grid-left{
+.comics-grid-element-group{
     display: flex;
     flex-flow: row nowrap;
     text-align: center;
 }
 
-.comics-grid-right{
-    display: flex;
-    flex-flow: row nowrap;
-    text-align: center;
-}
-
-.comics-grid-element-left{
+.comics-grid-element{
     flex: 1 0 14rem;
     margin-right: 1rem;
-    font-family: var(--roboto-font-family);
-    font-size: 1.4rem;
-    line-height:1.9rem;
-}
-
-.comics-grid-element-right{
-    flex: 1 0 14rem;
     margin-left: 1rem;
     font-family: var(--roboto-font-family);
     font-size: 1.4rem;

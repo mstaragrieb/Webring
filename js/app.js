@@ -224,6 +224,231 @@ var comicsList = {
         "badgeLink": "https://www.webtoons.com/en/challenge/suihira-the-city-of-water/list?title_no=39385",
         "comicServer": "webtoon"
       }]
+    },
+    {
+      "id": "10",
+      "comicName": "Midnight Furies",
+      "authorNames": "Jess Herron",
+      "comicDescription": "Zoe is an ex-basketball-ace desperate for any way to play the game who was forced by the death of her parents to drop out of school and support her brothers. Luckily, her mysterious friend Chase can get her into the most off-the-wall tournament no one's ever heard of- one where you play for time added onto your life! But Zoe's gotta be careful. Chase is playing her own game... and it might cost them more than just points. ~~~~~ DRAMA/ACTION/SLOWBURN ROMANCE F|M F|F, 14+, updates 3x a month",
+      "comicTags": [
+        "Action",
+        "Drama",
+        "LGBTQ+"
+        ],
+      "comicCarouselImage": "",
+      "comicGridImage": "",
+      "comicBadges": [{
+        "badgeLink": "https://tapas.io/series/MidnightFuries",
+        "comicServer":"tapas"
+      },
+      {
+        "badgeLink": "https://www.webtoons.com/en/challenge/midnight-furies/list?title_no=148753",
+        "comicServer": "webtoon"
+      },
+      {
+        "badgeLink": "https://www.patreon.com/jpherron",
+        "comicServer": "patreon"
+      },
+      {
+        "badgeLink": "https://midnightfuriescomic.tumblr.com/",
+        "comicServer": "tumblr"
+      }]
+    },
+    {
+      "id": "11",
+      "comicName": "Long Exposure",
+      "authorNames": "Mars Heyward",
+      "comicDescription": "Long Exposure is an ongoing webcomic about a nerd and a bully who are forced to work on a class project together. The story revolves around them developing super powers after an incident at a strange research center, and finding themselves followed by a mysterious car, overcoming personal challenges, and (most importantly) discovering how gay they are for each other.",
+      "comicTags": [
+        "Superheroes",
+        "Drama",
+        "LGBTQ+"
+        ],
+      "comicCarouselImage": "",
+      "comicGridImage": "",
+      "comicBadges": [{
+        "badgeLink": "https://tapas.io/series/Long-Exposure",
+        "comicServer": "tapas"
+      },
+      {
+        "badgeLink": "https://www.patreon.com/marsoid",
+        "comicServer": "patreon"
+      },
+      {
+        "badgeLink": "https://longexposurecomic.com/",
+        "comicServer": "indy"
+      }]
+    },{
+      "id": "12",
+      "comicName": "Meow Man",
+      "authorNames": "What Who's This",
+      "comicDescription": "What if your dream date turns out to be... a cat? Such is the dilemma for Bonnie, a young woman who wanted love and ended up with Claude, a highly needy half-man-half-cat instead. Will they be able to make it work? Is sharing the litterbox going to be a huge problem? And what ARE her friends going to think? Read Meow Man to see how this big ball of yarn unfurls.",
+      "comicTags": [
+        "Comedy",
+        "Drama",
+        "Romance"
+        ],
+      "comicCarouselImage": "",
+      "comicGridImage": "",
+      "comicBadges": [{
+        "badgeLink": "https://www.webtoons.com/en/comedy/meow-man/list?title_no=1677",
+        "comicServer": "webtoon"
+      },
+      {
+        "badgeLink": "https://www.patreon.com/jpherron",
+        "comicServer": "patreon"
+      },
+      {
+        "badgeLink": "https://giphy.com/gifs/wheres-lsU7mOh76j4QM",
+        "comicServer": "indy"
+      },
+      {
+        "badgeLink": "https://giphy.com/gifs/wheres-lsU7mOh76j4QM",
+        "comicServer": "indy"
+      },
+      {
+        "badgeLink": "https://giphy.com/gifs/wheres-lsU7mOh76j4QM",
+        "comicServer": "indy"
+      }]
+    },{
+      "id": "13",
+      "comicName": "TEST 4 SUPER LONG NAME SUPER SUPER SUPER WOWZERS",
+      "authorNames": "Naomi Watson",
+      "comicDescription": "After making a grisly discovery in the countryside, a small town book editor’s life gets entangled with a young Mafia lord and his intimidating bodyguard...even as every step she takes draws her deeper into the dangerous underworld of the city.",
+      "comicTags": [
+        "Drama",
+        "Romance"
+        ],
+      "comicCarouselImage": "",
+      "comicGridImage": "",
+      "comicBadges": [{
+        "badgeLink": "https://tapas.io/series/ringmybell",
+        "comicServer": "tapas"
+      },
+      {
+        "badgeLink": "https://www.webtoons.com/en/romance/midnight-poppy-land/list?title_no=1798",
+        "comicServer": "webtoon"
+      },
+      {
+        "badgeLink": "https://giphy.com/gifs/wheres-lsU7mOh76j4QM",
+        "comicServer": "indy"
+      }]
+    },{
+      "id": "14",
+      "comicName": "Boo",
+      "authorNames": "Sherlock Buttface",
+      "comicDescription": "After binge-watching beauty videos online, a shy, comic book fan masters the art of make-up, then sees her social standing skyrocket as she becomes her school’s prettiest pretty girl literally overnight. But will her elite status be short lived? How long can she keep her “real self” a secret? And what about that cute boy she likes? Could you imagine if he found out the truth?",
+      "comicTags": [
+        "Romance",
+        "Drama"
+        ],
+      "comicCarouselImage": "",
+      "comicGridImage": "",
+      "comicBadges": [{
+        "badgeLink": "https://www.webtoons.com/en/super-hero/lavender-jack/list?title_no=1410",
+        "comicServer": "webtoon"
+      },
+      {
+        "badgeLink": "https://www.patreon.com/danschkade",
+        "comicServer": "patreon"
+      },
+      {
+        "badgeLink": "https://longexposurecomic.com/",
+        "comicServer": "indy"
+      }]
+    },{
+      "id": "15",
+      "comicName": "Lavender Jack",
+      "authorNames": "Dan Who",
+      "comicDescription": "After the departure of Detective Theresa Ferrier and the defeat of Lord and Lady Hawthorne, the City of Gallery is left in the clawed hands of its vigilante hero, Lavender Jack. But as the City prepares for a divisive mayoral election, a new menace emerges from the shadows -- The Black Note, a masked phantom sowing disharmony and destruction among Gallery and its citizens. Will Lavender Jack be able end this symphony of terror? Or will this be his final curtain call...?",
+      "comicTags": [
+        "Action",
+        "Mystery"
+        ],
+      "comicCarouselImage": "",
+      "comicGridImage": "",
+      "comicBadges": [{
+        "badgeLink": "https://www.webtoons.com/en/super-hero/lavender-jack/list?title_no=1410",
+        "comicServer": "webtoon"
+      },
+      {
+        "badgeLink": "https://www.patreon.com/danschkade",
+        "comicServer": "patreon"
+      },
+      {
+        "badgeLink": "https://giphy.com/gifs/wheres-lsU7mOh76j4QM",
+        "comicServer": "indy"
+      },
+      {
+        "badgeLink": "https://giphy.com/gifs/wheres-lsU7mOh76j4QM",
+        "comicServer": "indy"
+      }]
+    },{
+      "id": "16",
+      "comicName": "Make it Stop",
+      "authorNames": "Mcmaster Mclongname Whoevenisthis Gilleazeu",
+      "comicDescription": "“Mom, I’m sorry. Please don’t die.” When Henry realizes death is at his mother’s doorstep, he strikes a deal with a lifespan dealer to give years of his own life to his ailing mother. Now, his mother is a 20-year-old college student with a full life ahead of her, and Henry devotes his remaining days to helping her live life to the fullest. But things turn complicated when his friend falls in love with her! **What the everliving fuck*",
+      "comicTags": [
+        "Romance",
+        "Horror",
+        "LGBTQ+"
+        ],
+      "comicCarouselImage": "",
+      "comicGridImage": "",
+      "comicBadges": [{
+        "badgeLink": "https://www.webtoons.com/en/super-hero/lavender-jack/list?title_no=1410",
+        "comicServer": "tapas"
+      },
+      {
+        "badgeLink": "https://www.webtoons.com/en/drama/mom-im-sorry/list?title_no=2049",
+        "comicServer": "webtoon"
+      },
+      {
+        "badgeLink": "https://www.patreon.com/danschkade",
+        "comicServer": "patreon"
+      }]
+    },
+    {
+      "id": "17",
+      "comicName": "Yumi's Cells",
+      "authorNames": "Boo boo",
+      "comicDescription": "A story of Yumi and her brain cells.",
+      "comicTags": [
+        "Horror",
+        "Mystery",
+        "LGBTQ+"
+        ],
+      "comicCarouselImage": "",
+      "comicGridImage": "",
+      "comicBadges": [{
+        "badgeLink": "https://www.webtoons.com/en/slice-of-life/yumi-cell/list?title_no=478",
+        "comicServer": "tapas"
+      },
+      {
+        "badgeLink": "https://www.hiveworkscomics.com/",
+        "comicServer": "Hiveworks"
+      },
+      {
+        "badgeLink": "https://giphy.com/gifs/wheres-lsU7mOh76j4QM",
+        "comicServer": "indy"
+      }]
+    },
+    {
+      "id": "18",
+      "comicName": "Suihira: The City of Water",
+      "authorNames": "Your Mom",
+      "comicDescription": "Her whole life, Princess Wahida has prayed for passage to “Suihira,” the holy City of Water, lost to time & myth. When the goddess Akia appears before her & declares Wahida to be worthy of her city, the zealous princess doesn’t think twice before venturing into the wilderness. However, Wahida finds she needs more than faith to brave the journey. •Updates every 4 weeks on Wed 12AM PT •Rated 12+ for mild swearing, partial nudity, some violence &intense situations •Social Media:@Suihira/@ArtByRiana",
+      "comicTags": [
+        "Fantasy",
+        "Drama",
+        "Mystery"
+        ],
+      "comicCarouselImage": "",
+      "comicGridImage": "",
+      "comicBadges": [{
+        "badgeLink": "https://www.webtoons.com/en/challenge/suihira-the-city-of-water/list?title_no=39385",
+        "comicServer": "webtoon"
+      }]
     }
   ]
 };
@@ -283,7 +508,7 @@ var webRing ={
                 var slideNodeTop = document.createElement('div');
                 slideNodeTop.classList.add('glide-slide-top');
                 //slideNodeTop.classList.add('u-max-full-width');
-                slideNodeTop.innerHTML='<img src="comic_images/' + index +'/slide.jpg">'  //height="100%" width="240"
+                slideNodeTop.innerHTML='<img src="comic_images/' + obj.comicsData[index].id +'/slide.jpg">'  //height="100%" width="240"
                 slideNode.appendChild(slideNodeTop);
                 var slideNodeTopTitle = document.createElement('div');
                 slideNodeTopTitle.classList.add('glide-slide-top-title');
@@ -358,8 +583,8 @@ var webRing ={
       * @param  {obj} Comics Object
       * @return {Void}
       */
-     setGrid : {
-        init: function setGridFromComics(obj){
+      setGrid : {
+        initOld: function setGridFromComicsOld(obj){
 
          // Build Dom Content
          if (typeof comicsGridLoopCounter === 'undefined') {
@@ -520,10 +745,115 @@ var webRing ={
          // </div>
 
          });
-     }
-     }
+     },
+        init: function setGridFromComics(obj){
+          var intGridRows = this.getNumberOfRows(obj);
+          var buildRows = this.buildRows(intGridRows);
+          obj.randomizedComics = this.randomizeComics(obj);
+          obj.comicChunks = this.chunkComics(obj);
+          var buildItemsContainer = this.buildItemsContainer(obj);
+        },
+        buildRows: function buidGridRows(intGridRows){
+          //var i=1
+          for(let i = 1; i <= intGridRows; i++) {
+            //console.log(i);
+            let gridRow = document.createElement('div');
+            gridRow.classList.add('flex-row');
+            gridRow.setAttribute('id', 'comic-grid-row-'+i);
+
+            let gridRowLeftColumn = document.createElement('div');
+            gridRowLeftColumn.classList.add('one-half');
+            gridRowLeftColumn.classList.add('left');
+            gridRow.appendChild(gridRowLeftColumn);
+
+            let gridRowRightColumn = document.createElement('div');
+            gridRowRightColumn.classList.add('one-half');
+            gridRowRightColumn.classList.add('right');
+            gridRow.appendChild(gridRowRightColumn);
+
+            document.getElementById('comics-grid-container').appendChild(gridRow);
+
+          }
+        },
+        buildItemsContainer: function buildItemsContainer(obj){
+          // var gridRowLeftColumnPull = document.createElement('div');
+          // gridRowLeftColumnPull.classList.add('comics-grid-left');
+          // gridRowLeftColumnPull.setAttribute('id', 'comic-grid-left-'+row);
+          // gridRowLeftColumn.appendChild(gridRowLeftColumnPull);
+          //
+          // var gridRowLeftColumnPullLeftElm = document.createElement('div');
+          // gridRowLeftColumnPullLeftElm.classList.add('comics-grid-element-left');
+          // gridRowLeftColumnPull.appendChild(gridRowLeftColumnPullLeftElm);
+          // gridRowLeftColumnPullLeftElm.innerHTML='<img src="comic_images/' + index +'/grid.jpg" class="u-max-full-width"><br /><div class="grid-title-clamp">' + obj.comicsData[index].comicName +'</div>';
+
+          obj.comicChunks.forEach(function(el, index, array){
+            console.log(el);
+            let leftPair = document.createElement('div');
+            leftPair.classList.add('comics-grid-element-group');
+
+            let leftPairItem1 = this.buildItem(array[index][0]);
+            let leftPairItem2 = this.buildItem(array[index][1]);
+
+            leftPair.appendChild(leftPairItem1);
+            leftPair.appendChild(leftPairItem2);
+
+            let rightPair = document.createElement('div');
+            rightPair.classList.add('comics-grid-element-group');
+
+            let rightPairItem1 = this.buildItem(array[index][2]);
+            let rightPairItem2 = this.buildItem(array[index][3]);
+
+            rightPair.appendChild(rightPairItem1);
+            rightPair.appendChild(rightPairItem2);
 
 
+            let insertChunk = document.getElementById('comic-grid-row-' + (index + 1));
+            //console.log(insertChunk);
+            insertChunk.firstChild.appendChild(leftPair);
+            insertChunk.lastChild.appendChild(rightPair);
+            // chunk.setAttribute('id', 'comic-grid-chunk-' + (index + 1));
+            //console.log(array);
+          },this);
+
+        },
+        buildItem: function buildItem(item){
+
+          let itemDiv = document.createElement('div')
+          itemDiv.classList.add('comics-grid-element');
+          if (typeof(item) !== 'undefined'){
+            itemDiv.innerHTML='<img src="comic_images/' + item.id +'/grid.jpg" class="u-max-full-width"><br /><div class="grid-title-clamp">' + item.comicName +'</div>';
+          }
+
+          return itemDiv;
+        },
+        getNumberOfRows: function getNumberOfRows(obj){
+          return Math.ceil(obj.comicsData.length/4);
+        },
+        randomizeComics: function returRandomComicsArray(obj){
+          let array = obj.comicsData;
+          let arrayLength = array.length - 1
+          for(let i = arrayLength; i > 0; i--){
+            const j = Math.floor(Math.random() * (i+1));
+            const temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+          }
+          return array;
+        },
+        chunkComics: function returnChunkedComicsArray(obj){
+          if (typeof(obj.randomizedComics) == undefined){
+            obj.randomizedComics = [];
+            console.warn("Something Wrong");
+          }
+          let array = obj.comicsData;
+          let size = 4; let chunked = [];
+          for (let i=0; i<array.length; i+=size) {
+               chunked.push(array.slice(i,i+size));
+          }
+          //console.log(chunked);
+          return chunked;
+        }
+      }
 }
 
 // Doc Ready
@@ -567,74 +897,6 @@ ready(function(){
     gap:0,
     focusAt: 0,
     breakpoints: {
-        // 1200: {
-        //     perView: 5,
-        //     peek: {
-        //         before: 0,
-        //         after: 80
-        //     }
-        // },
-        // 1100: {
-        //     perView: 5
-        // },
-        // 1217: {
-        //     perView: 5,
-        //     peek: {
-        //         before: 0,
-        //         after: 80
-        //     }
-        // },
-        // 1094: {
-        //     perView: 5
-        // },
-        // 1014: {
-        //     perView: 4,
-        //     peek: {
-        //         before: 0,
-        //         after: 80
-        //     }
-        // },
-        // 750: {
-        //     perView: 3,
-        //     peek: {
-        //         before: 0,
-        //         after: 40
-        //     }
-        // },
-        // 700: {
-        //     perView: 3
-        // },
-        // 600: {
-        //     perView: 2,
-        //     peek: {
-        //         before: 0,
-        //         after: 80
-        //     }
-        // },
-        // 550: {
-        //     perView: 2
-        // },
-        // 450: {
-        //     perView: 1,
-        //     peek: {
-        //         before: 0,
-        //         after: 120
-        //     }
-        // },
-        // 400: {
-        //     perView: 1,
-        //     peek: {
-        //         before: 0,
-        //         after: 80
-        //     }
-        // },
-        // 300: {
-        //     perView: 1,
-        //     peek: {
-        //         before: 0,
-        //         after: 40
-        //     }
-        // }
         2121: {
             perView: 7
         },
