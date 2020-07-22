@@ -507,11 +507,14 @@ var webRing ={
 
                 var slideNodeTop = document.createElement('div');
                 slideNodeTop.classList.add('glide-slide-top');
+
+
                 //slideNodeTop.classList.add('u-max-full-width');
                 slideNodeTop.innerHTML='<img src="comic_images/' + obj.comicsData[index].id +'/slide.jpg">'  //height="100%" width="240"
                 slideNode.appendChild(slideNodeTop);
                 var slideNodeTopTitle = document.createElement('div');
                 slideNodeTopTitle.classList.add('glide-slide-top-title');
+                slideNodeTopTitle.classList.add('hvr-sweep-to-bottom');
                 slideNodeTopTitle.classList.add('slide-title-clamp');
                 slideNodeTopTitle.innerHTML = obj.comicsData[index].comicName  //height="100%" width="240"
                 slideNode.appendChild(slideNodeTopTitle);
