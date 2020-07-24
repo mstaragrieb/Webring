@@ -897,8 +897,8 @@ ready(function(){
   var ComicSelider=new Glide('.glide', {
     type: 'carousel',
     autoplay: 0,
-    animationDuration: 600,
-    animationTimingFunc: 'linear',
+    animationDuration: 400,
+    animationTimingFunc: 'ease-out',
     perView: 8,
     gap:0,
     focusAt: 0,
