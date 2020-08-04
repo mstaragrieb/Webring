@@ -245,17 +245,17 @@ a:hover {
     width: 320px;
     height: 100vh;
     overflow-y: auto;
-    background: var(--light-background);
+    background-color: var(--grey3);
     border: 0.0625rem solid var(--separator);
     border-radius: 0;
     margin: 0;
     z-index: 1110;
-    right: -320px;
-    transition: right 0.3s;
+    left: -320px;
+    transition: left 0.3s;
 }
 [type=checkbox].drawer + * .drawer-close {
-    position: absolute;
-    /* top: var(--universal-margin);
+    /*  position: absolute;
+    top: var(--universal-margin);
     right: var(--universal-margin); */
     z-index: 1111;
     width: 2rem;
@@ -285,7 +285,7 @@ a:hover {
     }
 }
 [type=checkbox].drawer:checked + * {
-    right: 0;
+    left: 0;
 }
 @media screen and (min-width: 650px) {
     [type=checkbox].drawer:not(.persistent) + * {
@@ -333,6 +333,10 @@ a:hover {
     padding-left: var(--global-whitespace);;
     padding-right: var(--global-whitespace);;
     line-height: 4.2rem;
+    display:block;
+}
+.nav-link:first-child{
+  margin-top: 10rem;
 }
 
 .drawer-toggle{
@@ -627,6 +631,7 @@ top: 13.5rem;
     [type=checkbox].drawer + * {
         display: flex;
         border: 0;
+        background-color: var(--grey3);
     }
 
     .glide__arrows{
