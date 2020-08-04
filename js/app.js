@@ -22,8 +22,8 @@ class Webring {
     this.comicsFilters = this.getFilters();
     this.comicsRandomized = this.randomizeComics();
     console.log(this.randomizeComics());
-    this.comicsRandomizedFiltered = this.filterComics();
-    console.log(this.filterComics());
+    this.comicsRandomizedFiltered = this.filterComicsAND();
+    console.log(this.filterComicsAND());
     console.log(this.comicsRandomizedFiltered);
     this.comicsRandomizedChunked = this.chunkRadomizedComics();
     this.featuredComics = this.getFeatured();
@@ -34,6 +34,7 @@ class Webring {
       this.setFiltersDom();
       this.firstRun = false;
       this.bindElements();
+      console.log('clang');
     }
     this.setGridDom();
   }
@@ -75,6 +76,30 @@ class Webring {
   }
 
   filterComics(){
+    let arrayFilteredComics = [];
+    this.comicsRandomized.forEach(function(el, index, array){
+      let comic = el;
+      //console.log(this.comicsRandomizedFiltered)
+      this.comicsFilters.forEach(function(el, index, array){
+        //console.log(el);
+        let filterEl = el;
+        //console.log(filterEl);
+        //console.log(comic.comicTags.indexOf(filterEl));
+
+        if (comic.comicTags.indexOf(filterEl) !== -1){
+          //console.log(arrayFilteredComics);
+          //if this.comicsRandomizedFiltered.indexOf
+
+          arrayFilteredComics.push(comic);
+        }
+      // //  if el.comicTags.indexOf()
+      },this);
+    },this);
+    //console.log(arrayFilteredComics);
+    return arrayFilteredComics;
+  }
+
+  filterComicsAND(){
     let arrayFilteredComics = [];
     this.comicsRandomized.forEach(function(el, index, array){
       let comic = el;
@@ -255,6 +280,18 @@ class Webring {
   }
 
   setFiltersDom(){
+      var tagsHolder = document.querySelector('.comics-tags-holder');
+      this.comicsTags.forEach(function(el, index, array){
+          var tagButton = document.createElement('button');
+          tagButton.setAttribute('filter', el.toLowerCase());
+          tagButton.classList.add('button');
+          tagButton.classList.add('comics-filters-tag-button');
+          tagButton.innerHTML = el;
+          tagsHolder.appendChild(tagButton);
+      });
+  }
+
+  updateFiltersDom(){
       var tagsHolder = document.querySelector('.comics-tags-holder');
       this.comicsTags.forEach(function(el, index, array){
           var tagButton = document.createElement('button');
