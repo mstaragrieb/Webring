@@ -106,7 +106,7 @@ li {
     font-weight: normal;
     font-size: 2rem;
     line-height: 2.4rem;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
     background-color: var(--primary);
     color: var(--light-text);
     height:4.2rem;
@@ -126,6 +126,22 @@ input[type="button"]:focus {
     border-radius: 0px;
     border-color: #FFF;
     color: var(--light-text);
+}
+
+.button.active{
+    border: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    white-space: nowrap;
+    border-radius: 0px;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    /* margin-bottom: 0; */
+    background-color: var(--primary-varient);
+    color: var(--light-text);
+    height:4.2rem;
+    font-family: var(--roboto-font-family);
 }
 
 .select-button {

@@ -38,7 +38,7 @@ class Webring {
   build(){
     //Build Data
     console.log("Subsequent Run");
-    console.log(this);
+    console.log(ComicsManager);
 
     ComicsManager.cleanAndClear();
     //this.comicsTags = this.getTags();
@@ -93,7 +93,7 @@ class Webring {
     let arrayOfComics = [];
     let randomizeComics
     this.comicsFilters.forEach(function(el, index, array){
-      console.log("Filter Element " + el + index)
+      // console.log("Filter Element " + el + index)
       let filterCheck = el;
       let filterIndex = index
       if (filterIndex === 0){
@@ -102,11 +102,11 @@ class Webring {
         randomizeComics = arrayOfComics;
         arrayOfComics = [];
       }
-      console.log(randomizeComics);
+      //console.log(randomizeComics);
       randomizeComics.forEach(function(el, index, array){
         //console.log(el.comicTags);
         if (el.comicTags.indexOf(filterCheck) !== -1){
-          console.log("The filter is in this comics tags")
+          // console.log("The filter is in this comics tags")
           arrayOfComics.push(el)
         }else{
           //arrayOfComics.splice(arrayOfComics.indexOf(el),1);
@@ -116,8 +116,8 @@ class Webring {
         }
       },this);
     },this);
-    console.log("This is the final array");
-    console.log(arrayOfComics);
+    // console.log("This is the final array");
+    // console.log(arrayOfComics);
     return arrayOfComics;
   }
 
@@ -315,23 +315,31 @@ class Webring {
             tagsHolder.appendChild(tagButton);
         });
       }else{
-        let arrayTags=[];
-        this.comicsRandomizedFiltered.forEach(function(el, index, array){
-          //let checkArray = el.comicTags;
-            el.comicTags.forEach(function(el, index, array){
-                if (!arrayTags.includes(el)){
-                    arrayTags.push(el);
-                }
-            },this);
+
+        let arrayButtons = [];
+        this.comicsTags.forEach(function(el, index, array){
+          let isThis = el;
+          this.comicsRandomizedFiltered.forEach(function(el, index, array){
+            //console.log(el);
+            if (el.comicTags.indexOf(isThis) !== -1){
+              if (!arrayButtons.includes(isThis)){
+                  arrayButtons.push(isThis);
+              }
+            }
+          },this);
         },this);
-        arrayTags.forEach(function(el, index, array){
+        console.log (this.comicsFilters)
+        arrayButtons.forEach(function(el, index, array){
             var tagButton = document.createElement('button');
             tagButton.setAttribute('filter', el.toLowerCase());
             tagButton.classList.add('button');
+            if (this.comicsFilters.indexOf(el.toLowerCase()) !== -1){
+              tagButton.classList.add('active')
+            }
             tagButton.classList.add('comics-filters-tag-button');
             tagButton.innerHTML = el;
             tagsHolder.appendChild(tagButton);
-        });
+        },this);
       }
   }
 
