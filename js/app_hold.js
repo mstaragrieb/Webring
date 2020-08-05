@@ -1,3 +1,5 @@
+MicroModal.init();
+
 class Webring {
   constructor(comicObj){
     this.comicsData = comicObj.comicsData;
@@ -310,7 +312,7 @@ class Webring {
             var tagButton = document.createElement('button');
             tagButton.setAttribute('filter', el.toLowerCase());
             tagButton.classList.add('button');
-            tagButton.classList.add('comics-filters-tag-button');
+            tagButton.classList.add('comics-filters-tags-button-capitalize');
             tagButton.innerHTML = el;
             tagsHolder.appendChild(tagButton);
         });
@@ -336,7 +338,7 @@ class Webring {
             if (this.comicsFilters.indexOf(el.toLowerCase()) !== -1){
               tagButton.classList.add('active')
             }
-            tagButton.classList.add('comics-filters-tag-button');
+            tagButton.classList.add('comics-filters-tags-button-capitalize');
             tagButton.innerHTML = el;
             tagsHolder.appendChild(tagButton);
         },this);
@@ -400,7 +402,7 @@ class Webring {
     let itemDiv = document.createElement('div')
     itemDiv.classList.add('comics-grid-element');
     if (typeof(item) !== 'undefined'){
-      itemDiv.innerHTML='<img src="comic_images/' + item.id +'/grid.jpg" class="u-max-full-width"><br /><div class="grid-title-clamp">' + item.comicName +'</div>';
+      itemDiv.innerHTML='<div><img src="comic_images/' + item.id +'/grid.jpg" class="u-max-full-width comic-grid-image" data-micromodal-trigger="modal-1"><div class="sweep-background grid-title-clamp">' + item.comicName +'</div>';
     }
     return itemDiv;
   }
