@@ -4,23 +4,43 @@ class Webring {
     this.comicsTags = [];
     this.comicsFilters = [];
     this.comicsRandomized = [];
+    this.comicsRandomizedFiltered = [];
     this.comicsRandomizedChunked = [];
     this.featuredComics = [];
-    console.log(this);
+    this.firstRun = true;
+    //console.log(this);
   }
 
   init(){
+    this.build();
+  }
+  build(){
     //Build Data
+    console.log(this);
+    this.cleanAndClear();
     this.comicsTags = this.getTags();
     this.comicsFilters = this.getFilters();
     this.comicsRandomized = this.randomizeComics();
+    console.log(this.randomizeComics());
+    this.comicsRandomizedFiltered = this.filterComicsAND();
+    console.log(this.filterComicsAND());
+    console.log(this.comicsRandomizedFiltered);
     this.comicsRandomizedChunked = this.chunkRadomizedComics();
     this.featuredComics = this.getFeatured();
 
     //Build DOM
-    this.setSliderDom();
-    this.setFiltersDom();
+    if (this.firstRun){
+      this.setSliderDom();
+      this.setFiltersDom();
+      this.firstRun = false;
+      this.bindElements();
+      console.log('clang');
+    }
     this.setGridDom();
+  }
+
+  cleanAndClear(){
+    document.getElementById('comics-grid-container').innerHTML = "";
   }
 
   getTags(){
@@ -36,11 +56,10 @@ class Webring {
   }
 
   getFilters(){
+    let hash = [];
     if(window.location.hash) {
-     var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the #
-     alert (hash);
-     // hash found
-     }
+      hash = window.location.hash.substring(2).split(","); //Puts hash in
+    }
      return hash;
   }
 
@@ -56,8 +75,63 @@ class Webring {
     return array;
   }
 
+  filterComics(){
+    let arrayFilteredComics = [];
+    this.comicsRandomized.forEach(function(el, index, array){
+      let comic = el;
+      //console.log(this.comicsRandomizedFiltered)
+      this.comicsFilters.forEach(function(el, index, array){
+        //console.log(el);
+        let filterEl = el;
+        //console.log(filterEl);
+        //console.log(comic.comicTags.indexOf(filterEl));
+
+        if (comic.comicTags.indexOf(filterEl) !== -1){
+          //console.log(arrayFilteredComics);
+          //if this.comicsRandomizedFiltered.indexOf
+
+          arrayFilteredComics.push(comic);
+        }
+      // //  if el.comicTags.indexOf()
+      },this);
+    },this);
+    //console.log(arrayFilteredComics);
+    return arrayFilteredComics;
+  }
+
+  filterComicsAND(){
+    let arrayFilteredComics = [];
+    this.comicsRandomized.forEach(function(el, index, array){
+      let comic = el;
+      //console.log(this.comicsRandomizedFiltered)
+      this.comicsFilters.forEach(function(el, index, array){
+        //console.log(el);
+        let filterEl = el;
+        //console.log(filterEl);
+        //console.log(comic.comicTags.indexOf(filterEl));
+
+        if (comic.comicTags.indexOf(filterEl) !== -1){
+          //console.log(arrayFilteredComics);
+          //if this.comicsRandomizedFiltered.indexOf
+
+          arrayFilteredComics.push(comic);
+        }
+      // //  if el.comicTags.indexOf()
+      },this);
+    },this);
+    //console.log(arrayFilteredComics);
+    return arrayFilteredComics;
+  }
+
   chunkRadomizedComics(){
-    let array = this.comicsRandomized;
+    let array = [];
+    if (this.comicsRandomizedFiltered.length === 0){
+      console.log("ding")
+      array = this.comicsRandomized
+    }else{
+      console.log("dong")
+      array = this.comicsRandomizedFiltered;
+    }
     let size = 4; let chunked = [];
     for (let i=0; i<array.length; i+=size) {
          chunked.push(array.slice(i,i+size));
@@ -138,9 +212,86 @@ class Webring {
         }
       }, this);
     },this);
+    // your code here
+    var ComicSlider=new Glide('.glide', {
+      type: 'carousel',
+      autoplay: 0,
+      animationDuration: 400,
+      animationTimingFunc: 'ease-out',
+      perView: 8,
+      gap:0,
+      focusAt: 0,
+      breakpoints: {
+          2121: {
+              perView: 7
+          },
+          1818: {
+              perView: 6
+          },
+          1515: {
+              perView: 5
+          },
+          1212: {
+              perView: 4
+          },
+          989: {
+              perView: 3,
+              peek: {
+                  before: 0,
+                  after: 80
+              }
+          },
+          909: {
+              perView: 3
+          },
+          686: {
+              perView: 2,
+              peek: {
+                  before: 0,
+                  after: 80
+              }
+          },
+          606: {
+              perView: 2
+          },
+          423: {
+              perView: 1,
+              peek: {
+                  before: 0,
+                  after: 120
+              }
+          },
+          383: {
+              perView: 1,
+              peek: {
+                  before: 0,
+                  after: 80
+              }
+          },
+          300: {
+              perView: 1,
+              peek: {
+                  before: 0,
+                  after: 40
+              }
+          }
+      }
+    }).mount();
   }
 
   setFiltersDom(){
+      var tagsHolder = document.querySelector('.comics-tags-holder');
+      this.comicsTags.forEach(function(el, index, array){
+          var tagButton = document.createElement('button');
+          tagButton.setAttribute('filter', el.toLowerCase());
+          tagButton.classList.add('button');
+          tagButton.classList.add('comics-filters-tag-button');
+          tagButton.innerHTML = el;
+          tagsHolder.appendChild(tagButton);
+      });
+  }
+
+  updateFiltersDom(){
       var tagsHolder = document.querySelector('.comics-tags-holder');
       this.comicsTags.forEach(function(el, index, array){
           var tagButton = document.createElement('button');
@@ -175,7 +326,7 @@ class Webring {
 
     //
     this.comicsRandomizedChunked.forEach(function(el, index, array){
-      console.log(el);
+      //console.log(el);
       let leftPair = document.createElement('div');
       leftPair.classList.add('comics-grid-element-group');
 
@@ -214,6 +365,36 @@ class Webring {
     return itemDiv;
   }
 
+  setFilter(filter){
+    console.log("setFilter" + filter);
+  }
+
+  bindElements(){
+    let $this = this;
+    let buttons = document.querySelectorAll('[filter]')
+    for (var i = 0; i < buttons.length; i++) {
+    //console.log(buttons[i].getAttribute('onclick'));
+      buttons[i].addEventListener('click', function(e){
+        let hash = window.location.hash.substring(2).split(",");
+        if (hash[0] === ""){
+          //console.log('First Run');
+          window.location.hash = "!" + this.getAttribute('filter');
+        }else{
+          //console.log("HashItemIndex" + hash.indexOf(this.getAttribute('filter')));
+          if(hash.indexOf(this.getAttribute('filter')) !== -1){
+            //console.log('Has Value');
+            hash.splice(hash.indexOf(this.getAttribute('filter')),1);
+            window.location.hash = "!" + hash.toString();
+          }else{
+            //console.log('No Value');
+            window.location.hash = window.location.hash + ',' + this.getAttribute('filter');
+          }
+        }
+        $this.build();
+      },false);
+    }
+  }
+
 }
 
 // Doc Ready
@@ -234,79 +415,7 @@ function ready(callbackFunc) {
   }
 }
 
-
-
-
-
 ready(function(){
-    var ComicsManager = new Webring(comicsList);
-    ComicsManager.init();
+  document.ComicsManager = new Webring(comicsList).init();
 
-
-
-  // your code here
-  var ComicSlider=new Glide('.glide', {
-    type: 'carousel',
-    autoplay: 0,
-    animationDuration: 400,
-    animationTimingFunc: 'ease-out',
-    perView: 8,
-    gap:0,
-    focusAt: 0,
-    breakpoints: {
-        2121: {
-            perView: 7
-        },
-        1818: {
-            perView: 6
-        },
-        1515: {
-            perView: 5
-        },
-        1212: {
-            perView: 4
-        },
-        989: {
-            perView: 3,
-            peek: {
-                before: 0,
-                after: 80
-            }
-        },
-        909: {
-            perView: 3
-        },
-        686: {
-            perView: 2,
-            peek: {
-                before: 0,
-                after: 80
-            }
-        },
-        606: {
-            perView: 2
-        },
-        423: {
-            perView: 1,
-            peek: {
-                before: 0,
-                after: 120
-            }
-        },
-        383: {
-            perView: 1,
-            peek: {
-                before: 0,
-                after: 80
-            }
-        },
-        300: {
-            perView: 1,
-            peek: {
-                before: 0,
-                after: 40
-            }
-        }
-    }
-  }).mount();
 });
