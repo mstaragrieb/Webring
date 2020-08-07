@@ -1,4 +1,4 @@
-MicroModal.init();
+//MicroModal.init();
 
 class Webring {
   constructor(comicObj){
@@ -35,6 +35,8 @@ class Webring {
     this.setFiltersDom();
     this.bindElements();
     this.setGridDom();
+    this.setModalsDom();
+
   }
 
   build(){
@@ -409,6 +411,11 @@ class Webring {
 
   setFilter(filter){
     console.log("setFilter" + filter);
+  }
+
+  setModalsDom(){
+    MicroModal.init();
+    MicroModal.show('modal-1');
   }
 
   bindElements(){
