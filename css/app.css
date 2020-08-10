@@ -642,6 +642,14 @@ top: 13.5rem;
     margin-right: 1rem;
 }
 
+.comics-modal-image-container{
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.6rem;
+  background-color: var(--primary);
+}
+
 .comics-modal-image{
   max-width: 100%;
 }
@@ -668,9 +676,6 @@ top: 13.5rem;
   Basic Modal Styles
 \**************************/
 
-.modal {
-  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
-}
 
 .modal__overlay {
   position: fixed;
@@ -686,10 +691,9 @@ top: 13.5rem;
 
 .modal__container {
   background-color: #fff;
-  padding: 1rem;
-  max-width: 45rem;
-  max-height: 100vh;
-  background-color: var(--primary);
+  /* padding: 1rem; */
+  height: 100%;
+  /* background-color: var(--primary); */
   overflow-y: auto;
   box-sizing: border-box;
 }
@@ -698,6 +702,11 @@ top: 13.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height:6rem;
+  background-color: var(--grey3);
+  fill: var(--primary);
+  padding-left: 2rem;
+
 }
 
 .modal__title {
@@ -715,7 +724,7 @@ top: 13.5rem;
   border: 0;
 }
 
-.modal__header .modal__close:before { content: "\2715"; }
+/* .modal__header .modal__close:before { content: "\2039 "; } */
 
 .modal__content {
   padding-bottom: 1rem;
@@ -886,8 +895,12 @@ top: 13.5rem;
       margin-right: 1rem;
     }
 
-    .modal {
-      font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    .comics-modal-image-container{
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      background-color: var(--primary);
     }
 
     .modal__overlay {
@@ -906,6 +919,7 @@ top: 13.5rem;
       background-color: #fff;
       padding: 1rem;
       max-width: 45rem;
+      height: unset;
       max-height: 100vh;
       background-color: var(--primary);
       overflow-y: auto;
@@ -913,7 +927,7 @@ top: 13.5rem;
     }
 
     .modal__header {
-      display: flex;
+      display: none;
       justify-content: space-between;
       align-items: center;
     }
